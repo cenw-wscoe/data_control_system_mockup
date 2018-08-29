@@ -17,7 +17,6 @@
          <!-- Write closure template -->
         <script type="text/javascript">
             document.write(wet.builder.refTop({
-				"cdnEnv":"esdcprod",
 				"subTheme":"esdc",
 				"isApplication":true
 			}));
@@ -34,21 +33,21 @@
 				"appName":[{
 					"text":"Web Standards Data Control System"
 				}],
-				"menuPath":"./ajax/menu.html",
-				"cdnEnv":"esdcprod",
-				"customSearch":"",
-				"lngLinks":[{
-					"href":"?GoCTemplateCulture=fr-CA","lang":"fr","text":"Français"
+				"breadcrumbs": [{
+					"title": "Web Standards Data Control System",
+					"href": "./index.html"
 				}],
-				"search":true,
-				"subTheme":"esdc",
-				"showPreContent":true,
-				"topSecMenu":false
+				"menuPath":"./ajax/menu.html",
+				"lngLinks":[{
+					"href":"#",
+					"lang":"fr",
+					"text":"Français"
+				}],
+				"subTheme":"esdc"
 			});
         </script>
         <main role="main" property="mainContentOfPage" class="container">
 			<h1 id="wb-cont">CDTS/WET Review</h1>
-			
 			<div class="wb-frmvld">
 				<form method="post" action="#" id="ctl00">
 					<input type="submit" name="ctl00$MainContent$Add" value="Add New Review" id="MainContent_Add" class="btn btn-default mrgn-tp-md mrgn-bttm-md" />
@@ -69,10 +68,6 @@
             <script type="text/javascript">
                 var defPreFooter = document.getElementById("def-preFooter");
                 defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv":"esdcprod",
-					"showPostContent":true,
-					"showFeedback":true
-					"showShare":true
 				});
             </script>
         </main>
@@ -82,17 +77,13 @@
         <script type="text/javascript">
             var defFooter = document.getElementById("def-footer");
             defFooter.outerHTML = wet.builder.appFooter({
-				"cdnEnv":"esdcprod",
-				"showFeatures":true,
+				"showFeatures":false,
 				"subTheme":"esdc"
 			});
         </script>
         <!-- Write closure template -->
 		<script type="text/javascript">
 			document.write(wet.builder.refFooter({
-				"cdnEnv":"esdcprod",
-				"exitScript":false,
-				"displayModal":false
 			}));
 		</script>
 	</body>
