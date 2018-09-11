@@ -148,11 +148,11 @@
         </div>
         <!-- Write closure template -->
         <script type="text/javascript">
-            //var defTop = document.getElementById("def-top");
-            //defTop.outerHTML = wet.builder.appTop({"appName":[{"text":"Web Standards Data Control System"}],"menuPath":"./ajax/menu.html", "customSearch":"",//"lngLinks":[{"href":"?GoCTemplateCulture=fr-CA","lang":"fr","text":"Français"}],"search":true,"subTheme":"esdc","showPreContent":true,//"topSecMenu":false});
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML = wet.builder.appTop({"appName":[{"text":"Web Standards Data Control System"}], "customSearch":"","lngLinks":[{"href":"?GoCTemplateCulture=fr-CA","lang":"fr","text":"Français"}],"search":true,"subTheme":"esdc","showPreContent":true,"topSecMenu":false});
         </script>
         <main role="main" property="mainContentOfPage" class="container">
-			<nav role="navigation" id="wb-smapp"  data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init  wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
+			<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
 				<div class="pnl-strt container visible-md visible-lg nvbar">
 					<h2>Topics menu</h2>
 					<div class="row">
