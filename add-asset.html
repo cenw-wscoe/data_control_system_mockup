@@ -1,14 +1,9 @@
-
 <!DOCTYPE html>
-
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
     <head>
         <meta charset="utf-8"/>
-        <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
         <title>Add Asset</title>
         <meta content="width=device-width,initial-scale=1" name="viewport"/>
         <!-- Load closure template scripts -->
@@ -16,15 +11,14 @@
         <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/wet-en.js"></script> 
         <noscript>
             <!-- Write closure fall-back static file -->
-            		<!--[if gte IE 9 | !IE ]><!-->
 		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="icon" type="image/x-icon">
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/theme.min.css">
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/gctheme.css">
 		<!--<![endif]-->
 		<!--[if lt IE 9]>
-		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/ie8-theme.min.css" />
-		<![endif]-->
+			<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="shortcut icon" />
+			<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/ie8-theme.min.css" />
+			<![endif]-->
 		<!--[if lte IE 9]><![endif]-->
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/noscript.min.css" />
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/cdtsfixes.css">
@@ -33,121 +27,99 @@
         <script type="text/javascript">
             document.write(wet.builder.refTop({"cdnEnv":"esdcprod","subTheme":"esdc","isApplication":true}));
         </script>
-
         <link rel='stylesheet' type='text/css' href='style.css'>
-
-        <!-- GoC.WebTemplate Version ASPX 4.0.27.1 -->
-        <!-- GoC.WebTemplate.Core Version 1.0.6596.29129 -->
     </head>
     <body vocab="http://schema.org/" typeof="WebPage">
-                        
         <div id="def-top">
-            <!-- Write closure fall-back static file -->
-            		<ul id="wb-tphp">
-			<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
-			<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
-			<!-- If you have a section menu 
-			<li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-sec">Skip to section menu</a></li>
-			-->
-		</ul>
-		<header role="banner">
-			<div id="wb-bnr">
-				<div id="app-brand">
-					<div class="container">
-						<div class="row">
-							<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
-								<div class="app-name">
-									<a href="https://intranet.canada.ca/index-eng.asp"><span><span class="bold-gc">GC</span>intranet</span></a>
-								</div>
-							</section>
-							<section id="wb-gctools" class="col-lg-6 visible-lg">
-								<div class="pull-left tool-link">
-									<a href="https://gcconnex.gc.ca/splash/">
-									<span class="bold-gc">GC</span>connex</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
-									<span class="bold-gc">GC</span>pedia</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
-									<span class="bold-gc">GC</span>directory</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="https://gccollab.ca/splash/">
-									<span class="bold-gc">GC</span>collab</a>
-								</div>
-							</section>
-							<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs text-right">
-								<h2 class="wb-inv">Language selection</h2>
-								<div class="row">
-									<div class="col-md-12">
-										<ul class="list-inline margin-bottom-none gcbarlng">
-											<li><a lang="fr" href="#">Français</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-							<!-- Remove the whole <section> if search is disabled -->
-							<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-								<h2>Search</h2>
-								<form action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx" method="get" name="cse-search-box" role="search" class="form-inline">
-									<div class="form-group">
-										<label for="wb-srch-q" class="wb-inv">Search website</label>
-										<input class="wb-srch-q form-control pull-right" id="wb-srch-q" name="q"  value="" size="21" maxlength="150" placeholder="Search GCintranet">
-										<input type="hidden" name="a" value="s" />
-										<input type="hidden" name="s" value="1" />
-										<input type="hidden" name="chk2" value="True" />
-									</div>
-									<div class="form-group submit">
-										<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-									</div>
-								</form>
-							</section>
-							<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
-								<!-- Adjust the <h2>, title and <span> below whether you are using a search and/or a menu -->
-								<h2>Search and menus</h2>
-								<ul class="list-inline text-right chvrn">
-									<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><!-- Remove the following <span> if search is turned off --><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span><!-- Remove the following </span> if search is turned off --></span></a></li>
-								</ul>
-								<div id="mb-pnl"></div>
-							</section>
-						</div>
-						<div id="tools-sm" class="row visible-md">
-							<section id="tool-container-sm" class="col-md-12 col-sm-12">
-								<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span class="bold-gc">GC</span>connex</a></div>
-								<div class="pull-left tool-link"><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span class="bold-gc">GC</span>pedia</a></div>
-								<div class="pull-left tool-link"><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span class="bold-gc">GC</span>directory</a></div>
-								<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span class="bold-gc">GC</span>collab</a></div>
-							</section>
-						</div>		
-					</div>
-				</div>				
-			</div>
-			<div id="gcappbanner">
-				<div class="container">
-					<div class="row gc-intra-br">
-						<!-- Change class to "col-md-10" if you have a sign in/out button -->
-						<div id="wb-sttl" class="col-md-12">
-							<!-- If you're on a secure page, add in the <i> -->
-							<!-- Add in your application name below -->
-							<a href="#"><span><!--<i class="glyphicon glyphicon-lock mrgn-rght-md"></i>-->Web Standards Data Control System</span></a>
-						</div>
-						<!-- If you want to use the sign in/out buttons 
-						<div class="text-right col-md-2">
+            <ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+				<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
+			</ul>
+			<!-- GC Menu -->
+			<header role="banner">
+				<div id="wb-bnr">
+					<div id="app-brand">
+						<div class="container">
 							<div class="row">
-								<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign out</a></p>
-								<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign in</a></p>
+								<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
+									<div class="app-name">
+										<a href="https://intranet.canada.ca/index-eng.asp"><span><span class="bold-gc">GC</span>intranet</span></a>
+									</div>
+								</section>
+								<section id="wb-gctools" class="col-lg-6 visible-lg">
+									<div class="pull-left tool-link">
+										<a href="https://gcconnex.gc.ca/splash/">
+										<span class="bold-gc">GC</span>connex</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
+										<span class="bold-gc">GC</span>pedia</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
+										<span class="bold-gc">GC</span>directory</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="https://gccollab.ca/splash/">
+										<span class="bold-gc">GC</span>collab</a>
+									</div>
+								</section>
+								<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs text-right">
+									<h2 class="wb-inv">Language selection</h2>
+									<div class="row">
+										<div class="col-md-12">
+											<ul class="list-inline margin-bottom-none gcbarlng">
+												<li><a lang="fr" href="#">Français</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+									<h2>Search</h2>
+									<form action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx" method="get" name="cse-search-box" role="search" class="form-inline">
+										<div class="form-group">
+											<label for="wb-srch-q" class="wb-inv">Search website</label>
+											<input class="wb-srch-q form-control pull-right" id="wb-srch-q" name="q"  value="" size="21" maxlength="150" placeholder="Search GCintranet">
+											<input type="hidden" name="a" value="s" />
+											<input type="hidden" name="s" value="1" />
+											<input type="hidden" name="chk2" value="True" />
+										</div>
+										<div class="form-group submit">
+											<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+										</div>
+									</form>
+								</section>
+								<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+									<h2>Search and menus</h2>
+									<ul class="list-inline text-right chvrn">
+										<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+									</ul>
+									<div id="mb-pnl"></div>
+								</section>
+							</div>
+							<div id="tools-sm" class="row visible-md">
+								<section id="tool-container-sm" class="col-md-12 col-sm-12">
+									<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span class="bold-gc">GC</span>connex</a></div>
+									<div class="pull-left tool-link"><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span class="bold-gc">GC</span>pedia</a></div>
+									<div class="pull-left tool-link"><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span class="bold-gc">GC</span>directory</a></div>
+									<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span class="bold-gc">GC</span>collab</a></div>
+								</section>
+							</div>		
+						</div>
+					</div>				
+				</div>
+				<!-- Main Menu -->
+				<div id="gcappbanner">
+					<div class="container">
+						<div class="row gc-intra-br">
+							<div id="wb-sttl" class="col-md-12">
+								<a href="#"><span>Web Standards Data Control System</span></a>
 							</div>
 						</div>
-						-->
 					</div>
 				</div>
-			</div>
-			<!-- Remove the whole <nav> if you want to disable breadcrumbs -->
-		</header>            
+			</header>            
         </div>
-        <!-- Write closure template -->
         <main role="main" property="mainContentOfPage" class="container">
 			<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
 				<div class="pnl-strt container visible-md visible-lg nvbar">
@@ -203,270 +175,211 @@
 						</ul>
 					</div>
 				</div>
-				<!-- DataAjaxFragmentEnd -->
-				</nav>
-            <!-- the main content -->
-            
+			</nav>
+    		<h1 id="wb-cont">Add Asset</h1>
+    		<p>Use this form to add a new asset to the inventory. Attributes with * are required.</p>
+    		<span id="MainContent_Display" class="display"></span>
 
-    <h1 id="wb-cont">Add Asset</h1>
-    <p>Use this form to add a new asset to the inventory. Attributes with * are required.</p>
-
-    <span id="MainContent_Display" class="display"></span>
-
-    <div class="wb-frmvld">
-        <form method="post" action="./add-asset.html" id="ctl00">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNjQ5MDI3MzcPZBYCZg9kFgJmD2QWAgIDD2QWDgIPDxAPFgIeC18hRGF0YUJvdW5kZ2QPFgwCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwWDBAFF0NoaWVmIEZpbmFuY2lhbCBPZmZpY2VyBQExZxAFFkNpdGl6ZW4gU2VydmljZSBCcmFuY2gFATJnEAUtSW5jb21lIFNlY3VyaXR5IGFuZCBTb2NpYWwgRGV2ZWxvcG1lbnQgQnJhbmNoBQEzZxAFLUluZm9ybWF0aW9uLCBJbm5vdmF0aW9uIGFuZCBUZWNobm9sb2d5IEJyYW5jaAUBNGcQBRlJbnRlZ3JpdHkgU2VydmljZXMgQnJhbmNoBQE1ZxAFBkxhYm91cgUBNmcQBQ9MZWFybmluZyBCcmFuY2gFATdnEAUZUHJvZ3JhbSBPcGVyYXRpb25zIEJyYW5jaAUBOGcQBS9QdWJsaWMgQWZmYWlycyBhbmQgU3Rha2Vob2xkZXIgUmVsYXRpb25zIEJyYW5jaAUBOWcQBRxTa2lsbHMgYW5kIEVtcGxveW1lbnQgQnJhbmNoBQIxMGcQBSNTdHJhdGVnaWMgYW5kIFNlcnZpY2UgUG9saWN5IEJyYW5jaAUCMTFnEAU3VHJhbnNmb3JtYXRpb24gYW5kIEludGVncmF0ZWQgU2VydmljZSBNYW5hZ2VtZW50IEJyYW5jaAUCMTJnZGQCEw8QDxYCHwBnZA8WAgIBAgIWAhAFBUFzc2V0BQExZxAFCUNvbXBvbmVudAUBMmdkZAIXDxAPFgIfAGdkDxYCAgECAhYCEAUISW50ZXJuZXQFATFnEAUISW50cmFuZXQFATJnZGQCGw8QDxYCHwBnZA8WAgIBAgIWAhAFC0FwcGxpY2F0aW9uBQExZxAFBFNpdGUFATJnZGQCHw8QDxYCHwBnZA8WBQIBAgICAwIEAgUWBRAFD0luaXRpYXRpdmUgU2l0ZQUBMWcQBRBJbnN0aXR1dGlvbiBTaXRlBQEyZxAFCFN1YiBTaXRlBQEzZxAFB1Vua25vd24FATVnEAUPV2ViIEFwcGxpY2F0aW9uBQE0Z2RkAiMPEA8WAh8AZ2QPFgYCAQICAgMCBAIFAgYWBhAFA0FFTQUBMWcQBQNEK0gFATJnEAUURXh0ZXJuYWwgLSBCeSBDbGllbnQFATNnEAUESUlUQgUBNGcQBQhUZWFtc2l0ZQUBNWcQBQdVbmtub3duBQE2Z2RkAicPEA8WAh8AZ2QPFgQCAQICAgMCBBYEEAUGQ2FuYWRhBQExZxAFDUNhbmFkYSAtIEVTREMFATJnEAURQ2FuYWRhIC0gU2VydmljZXMFATNnEAUDTi9BBQE0Z2RkZFN3gHa3Fvfpc6SBhBrD8l1SPZ4RAIbouVU5L/9QNPtH" />
-</div>
-
-
-            <div class="form-group">
-                <label for="MainContent_AssetNameEn" id="MainContent_AssetNameEnLabel">Asset Name (English) *</label>
-                <input name="ctl00$MainContent$AssetNameEn" type="text" id="MainContent_AssetNameEn" class="form-control" required="required" />
-            </div>
-            
-            <div class="form-group">
-                <label for="MainContent_AssetNameFr" id="MainContent_AssetNameFrLabel">Asset Name (French) *</label>
-                <input name="ctl00$MainContent$AssetNameFr" type="text" id="MainContent_AssetNameFr" class="form-control" required="required" />
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_Scope" id="MainContent_ScopeLabel">In Scope *</label>
-                <select name="ctl00$MainContent$Scope" id="MainContent_Scope" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="True">Yes</option>
-	<option value="False">No</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_Branch" id="MainContent_BranchLabel">Branch *</label>
-                <select name="ctl00$MainContent$Branch" id="MainContent_Branch" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Chief Financial Officer</option>
-	<option value="2">Citizen Service Branch</option>
-	<option value="3">Income Security and Social Development Branch</option>
-	<option value="4">Information, Innovation and Technology Branch</option>
-	<option value="5">Integrity Services Branch</option>
-	<option value="6">Labour</option>
-	<option value="7">Learning Branch</option>
-	<option value="8">Program Operations Branch</option>
-	<option value="9">Public Affairs and Stakeholder Relations Branch</option>
-	<option value="10">Skills and Employment Branch</option>
-	<option value="11">Strategic and Service Policy Branch</option>
-	<option value="12">Transformation and Integrated Service Management Branch</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_AssetComponent" id="MainContent_AssetComponentLabel">Asset / Component *</label>
-                <select name="ctl00$MainContent$AssetComponent" id="MainContent_AssetComponent" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Asset</option>
-	<option value="2">Component</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_AssetType" id="MainContent_AssetTypeLabel">Asset Type *</label>
-                <select name="ctl00$MainContent$AssetType" id="MainContent_AssetType" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Internet</option>
-	<option value="2">Intranet</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_SiteTypeIITB" id="MainContent_SiteTypeIITBLabel">IITB Type *</label>
-                <select name="ctl00$MainContent$SiteTypeIITB" id="MainContent_SiteTypeIITB" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Application</option>
-	<option value="2">Site</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_SiteTypeTBS" id="MainContent_SiteTypeTBSLabel">TBS Type *</label>
-                <select name="ctl00$MainContent$SiteTypeTBS" id="MainContent_SiteTypeTBS" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Initiative Site</option>
-	<option value="2">Institution Site</option>
-	<option value="3">Sub Site</option>
-	<option value="5">Unknown</option>
-	<option value="4">Web Application</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_AssetHost" id="MainContent_AssetHostLabel">Host *</label>
-                <select name="ctl00$MainContent$AssetHost" id="MainContent_AssetHost" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">AEM</option>
-	<option value="2">D+H</option>
-	<option value="3">External - By Client</option>
-	<option value="4">IITB</option>
-	<option value="5">Teamsite</option>
-	<option value="6">Unknown</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_DomainName" id="MainContent_DomainNameLabel">Domain *</label>
-                <select name="ctl00$MainContent$DomainName" id="MainContent_DomainName" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="1">Canada</option>
-	<option value="2">Canada - ESDC</option>
-	<option value="3">Canada - Services</option>
-	<option value="4">N/A</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_ProductionUrl" id="MainContent_ProductionUrlLabel">Production Url *</label>
-                <textarea name="ctl00$MainContent$ProductionUrl" rows="2" cols="20" id="MainContent_ProductionUrl" class="form-control" required="required">
-</textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_AssessmentUrl" id="MainContent_AssessmentUrlLabel">Assessment Url</label>
-                <textarea name="ctl00$MainContent$AssessmentUrl" rows="2" cols="20" id="MainContent_AssessmentUrl" class="form-control">
-</textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_CollaborativeSite" id="MainContent_CollaborativeSiteLabel">Collaborative Site</label>
-                <select name="ctl00$MainContent$CollaborativeSite" id="MainContent_CollaborativeSite" class="form-control">
-	<option value="">Select</option>
-	<option value="True">Yes</option>
-	<option value="False">No</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_SecureLogin" id="MainContent_SecureLoginLabel">Secure Login</label>
-                <select name="ctl00$MainContent$SecureLogin" id="MainContent_SecureLogin" class="form-control">
-	<option value="">Select</option>
-	<option value="True">Yes</option>
-	<option value="False">No</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_FollowsRMS" id="MainContent_FollowsRMSLabel">Follows RMS</label>
-                <select name="ctl00$MainContent$FollowsRMS" id="MainContent_FollowsRMS" class="form-control">
-	<option value="">Select</option>
-	<option value="True">Yes</option>
-	<option value="False">No</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_NonCompliantWaiver" id="MainContent_NonCompliantWaiverLabel">Non Compliant Waiver</label>
-                <input name="ctl00$MainContent$NonCompliantWaiver" type="text" id="MainContent_NonCompliantWaiver" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_CostCenter" id="MainContent_CostCenterLabel">Cost Center</label>
-                <input name="ctl00$MainContent$CostCenter" type="text" id="MainContent_CostCenter" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_RecOrder" id="MainContent_RecOrderLabel">Rec Order</label>
-                <input name="ctl00$MainContent$RecOrder" type="text" id="MainContent_RecOrder" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_CDTSRegistered" id="MainContent_CDTSRegisteredLabel">CDTS Registered</label>
-                <select name="ctl00$MainContent$CDTSRegistered" id="MainContent_CDTSRegistered" class="form-control">
-	<option value="">Select</option>
-	<option value="True">Yes</option>
-	<option value="False">No</option>
-
-</select>
-            </div>
-
-            <div class="form-group">
-                <label for="MainContent_Remarks" id="MainContent_RemarksLabel">Remarks</label>
-                <textarea name="ctl00$MainContent$Remarks" rows="2" cols="20" id="MainContent_Remarks" class="form-control">
-</textarea>
-            </div>
-
-            <input type="submit" name="ctl00$MainContent$Submit" value="Submit" id="MainContent_Submit" class="btn btn-default" />
-        
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CCEA6585" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEHnYiNQhr/b5/jfVVhu7qBx3CIwkDRekDqsKYsF+OaQTNrvSSxWrdVkFXe/8LcGe0TE1d+cBtkezzc2Die+qF19+vmG6RgFjmlOAetlfx5/ehRGCH4Iml/qwwHqBtQOwo0253HfFA4GZZJajg6fCjoorEZWwTHe6w1TXl36NXjjpGr4IeTBjqj5mokB7bZebr3a2MW1SrR9zteD7AlTN187cVN9MXT0HB/cvvtNFhLlIqiFCDrZAoVLXIoCqP0UNP0vDIPYhS6e7H5xbNVe49jTqyTizjxjl4836Y/Oe33h2Mou5UmsLcgMHujsuK1OOy2asqdlslUmuFbinOscaR+ICjdZtZTw70j8shcjUU9QP6FYBPBqzM1JuAapcKBETnv0dWtFC+HTe8FYVxuBy+TrTe4IRxjBvUcJ15AVoiMASvkcwK5dHdOpR0buqSHU9Q39rP27COsBu8Xe+TxavNF2ZsisQGdl/lT8HgujNf6un44je4WYbbZqHrp1gmeWddeAL14CU/PQOakEblI+1BFMVmewzwiZ6BlwqfEogPmoDC8wYr7+rBm0TDlTgQD4WUAAIuC7w+XyAKSH84iS6gVTt+HhTbSIa6FsRCjtSlhAwmRjsEng7fJsjkl5TCgWUWr1bcsFA5fDMWPSkSj1cyLuxhaCeujXEHPRf/YGBdXiIJQ2X6YGHWiWR0SrEtOSXUXzWq1UvtvTKYKU8as4CNyvHxTSNsPKO7xtEmqie2rdQNyLzxaC8vnDvx5YKLhTtSXMLg+c1PqJvBgB2DmSxexqhHKxKXy7BubWNOiKKmn33Nhhegc6hD5yGEydFmTj5Zhz+EG10zoYsImAZi5bFqs2wiuuOGjorx+9sqxNChO01/jYUa8hUqk2MHwNH32yAHapjWbFl3gtruCLrBqvy1DRcjSbpsYL7EuQnrwQW8EGvdbW1lVZOns8l+skmv8TdK6BS9E/mUpqtOlryNm+zzPC962yCNruRMorjz48+D7Bkqd4T+UcPPTMxLCYB0VmBN5xAgIkLAJdHZult4ZXgeFFFdnRaBFyp9OxwtaZTQvJ6FmDmNBWIbwKSWX5IiqLOLlmI4zdCP4uzeAJ9Czwj62zq1+0LnighTG8UF5DrbMjdkO4RT1sXmQz0X86e6acorq3H4ins1Xdad2VkJ0riEUryjlPwDmnkTCq+1UHo1LP5mTYS3k5ru98jdYnLuISSH4xFyc8oQmTfTpZUmxkRKXFKzzrpdFXt/EdRAUGqex5ESkUNYizvvW/6h++dET08PUnzo+/yPiORaExyFvtbiIsUffePU1NrnVvppESf9kFUPkd76IJva6CNOTgqdS6NhM0tE9b1rGMXS6AJpbFvRB219rMcAxLlvwBqiLzosKJjEGzPLPSlWaJTZWu1GNgr2fQsb+NJqsmoDHjrTkB0Ay8" />
-</div></form>
-    </div>
-
-
+    		<div class="wb-frmvld">
+				<form method="post" action="./add-asset.html" id="ctl00">
+					<div class="aspNetHidden">
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNjQ5MDI3MzcPZBYCZg9kFgJmD2QWAgIDD2QWDgIPDxAPFgIeC18hRGF0YUJvdW5kZ2QPFgwCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwWDBAFF0NoaWVmIEZpbmFuY2lhbCBPZmZpY2VyBQExZxAFFkNpdGl6ZW4gU2VydmljZSBCcmFuY2gFATJnEAUtSW5jb21lIFNlY3VyaXR5IGFuZCBTb2NpYWwgRGV2ZWxvcG1lbnQgQnJhbmNoBQEzZxAFLUluZm9ybWF0aW9uLCBJbm5vdmF0aW9uIGFuZCBUZWNobm9sb2d5IEJyYW5jaAUBNGcQBRlJbnRlZ3JpdHkgU2VydmljZXMgQnJhbmNoBQE1ZxAFBkxhYm91cgUBNmcQBQ9MZWFybmluZyBCcmFuY2gFATdnEAUZUHJvZ3JhbSBPcGVyYXRpb25zIEJyYW5jaAUBOGcQBS9QdWJsaWMgQWZmYWlycyBhbmQgU3Rha2Vob2xkZXIgUmVsYXRpb25zIEJyYW5jaAUBOWcQBRxTa2lsbHMgYW5kIEVtcGxveW1lbnQgQnJhbmNoBQIxMGcQBSNTdHJhdGVnaWMgYW5kIFNlcnZpY2UgUG9saWN5IEJyYW5jaAUCMTFnEAU3VHJhbnNmb3JtYXRpb24gYW5kIEludGVncmF0ZWQgU2VydmljZSBNYW5hZ2VtZW50IEJyYW5jaAUCMTJnZGQCEw8QDxYCHwBnZA8WAgIBAgIWAhAFBUFzc2V0BQExZxAFCUNvbXBvbmVudAUBMmdkZAIXDxAPFgIfAGdkDxYCAgECAhYCEAUISW50ZXJuZXQFATFnEAUISW50cmFuZXQFATJnZGQCGw8QDxYCHwBnZA8WAgIBAgIWAhAFC0FwcGxpY2F0aW9uBQExZxAFBFNpdGUFATJnZGQCHw8QDxYCHwBnZA8WBQIBAgICAwIEAgUWBRAFD0luaXRpYXRpdmUgU2l0ZQUBMWcQBRBJbnN0aXR1dGlvbiBTaXRlBQEyZxAFCFN1YiBTaXRlBQEzZxAFB1Vua25vd24FATVnEAUPV2ViIEFwcGxpY2F0aW9uBQE0Z2RkAiMPEA8WAh8AZ2QPFgYCAQICAgMCBAIFAgYWBhAFA0FFTQUBMWcQBQNEK0gFATJnEAUURXh0ZXJuYWwgLSBCeSBDbGllbnQFATNnEAUESUlUQgUBNGcQBQhUZWFtc2l0ZQUBNWcQBQdVbmtub3duBQE2Z2RkAicPEA8WAh8AZ2QPFgQCAQICAgMCBBYEEAUGQ2FuYWRhBQExZxAFDUNhbmFkYSAtIEVTREMFATJnEAURQ2FuYWRhIC0gU2VydmljZXMFATNnEAUDTi9BBQE0Z2RkZFN3gHa3Fvfpc6SBhBrD8l1SPZ4RAIbouVU5L/9QNPtH" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssetNameEn" id="MainContent_AssetNameEnLabel">Asset Name (English) *</label>
+						<input name="ctl00$MainContent$AssetNameEn" type="text" id="MainContent_AssetNameEn" class="form-control" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssetNameFr" id="MainContent_AssetNameFrLabel">Asset Name (French) *</label>
+						<input name="ctl00$MainContent$AssetNameFr" type="text" id="MainContent_AssetNameFr" class="form-control" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_Scope" id="MainContent_ScopeLabel">In Scope *</label>
+						<select name="ctl00$MainContent$Scope" id="MainContent_Scope" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="True">Yes</option>
+							<option value="False">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_Branch" id="MainContent_BranchLabel">Branch *</label>
+						<select name="ctl00$MainContent$Branch" id="MainContent_Branch" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Chief Financial Officer</option>
+							<option value="2">Citizen Service Branch</option>
+							<option value="3">Income Security and Social Development Branch</option>
+							<option value="4">Information, Innovation and Technology Branch</option>
+							<option value="5">Integrity Services Branch</option>
+							<option value="6">Labour</option>
+							<option value="7">Learning Branch</option>
+							<option value="8">Program Operations Branch</option>
+							<option value="9">Public Affairs and Stakeholder Relations Branch</option>
+							<option value="10">Skills and Employment Branch</option>
+							<option value="11">Strategic and Service Policy Branch</option>
+							<option value="12">Transformation and Integrated Service Management Branch</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssetComponent" id="MainContent_AssetComponentLabel">Asset / Component *</label>
+						<select name="ctl00$MainContent$AssetComponent" id="MainContent_AssetComponent" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Asset</option>
+							<option value="2">Component</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssetType" id="MainContent_AssetTypeLabel">Asset Type *</label>
+						<select name="ctl00$MainContent$AssetType" id="MainContent_AssetType" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Internet</option>
+							<option value="2">Intranet</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_SiteTypeIITB" id="MainContent_SiteTypeIITBLabel">IITB Type *</label>
+						<select name="ctl00$MainContent$SiteTypeIITB" id="MainContent_SiteTypeIITB" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Application</option>
+							<option value="2">Site</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_SiteTypeTBS" id="MainContent_SiteTypeTBSLabel">TBS Type *</label>
+						<select name="ctl00$MainContent$SiteTypeTBS" id="MainContent_SiteTypeTBS" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Initiative Site</option>
+							<option value="2">Institution Site</option>
+							<option value="3">Sub Site</option>
+							<option value="5">Unknown</option>
+							<option value="4">Web Application</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssetHost" id="MainContent_AssetHostLabel">Host *</label>
+						<select name="ctl00$MainContent$AssetHost" id="MainContent_AssetHost" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">AEM</option>
+							<option value="2">D+H</option>
+							<option value="3">External - By Client</option>
+							<option value="4">IITB</option>
+							<option value="5">Teamsite</option>
+							<option value="6">Unknown</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_DomainName" id="MainContent_DomainNameLabel">Domain *</label>
+						<select name="ctl00$MainContent$DomainName" id="MainContent_DomainName" class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Canada</option>
+							<option value="2">Canada - ESDC</option>
+							<option value="3">Canada - Services</option>
+							<option value="4">N/A</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_ProductionUrl" id="MainContent_ProductionUrlLabel">Production Url *</label>
+						<textarea name="ctl00$MainContent$ProductionUrl" rows="2" cols="20" id="MainContent_ProductionUrl" class="form-control" required="required"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_AssessmentUrl" id="MainContent_AssessmentUrlLabel">Assessment Url</label>
+						<textarea name="ctl00$MainContent$AssessmentUrl" rows="2" cols="20" id="MainContent_AssessmentUrl" class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_CollaborativeSite" id="MainContent_CollaborativeSiteLabel">Collaborative Site</label>
+						<select name="ctl00$MainContent$CollaborativeSite" id="MainContent_CollaborativeSite" class="form-control">
+							<option value="">Select</option>
+							<option value="True">Yes</option>
+							<option value="False">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_SecureLogin" id="MainContent_SecureLoginLabel">Secure Login</label>
+						<select name="ctl00$MainContent$SecureLogin" id="MainContent_SecureLogin" class="form-control">
+							<option value="">Select</option>
+							<option value="True">Yes</option>
+							<option value="False">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_FollowsRMS" id="MainContent_FollowsRMSLabel">Follows RMS</label>
+						<select name="ctl00$MainContent$FollowsRMS" id="MainContent_FollowsRMS" class="form-control">
+							<option value="">Select</option>
+							<option value="True">Yes</option>
+							<option value="False">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_NonCompliantWaiver" id="MainContent_NonCompliantWaiverLabel">Non Compliant Waiver</label>
+						<input name="ctl00$MainContent$NonCompliantWaiver" type="text" id="MainContent_NonCompliantWaiver" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_CostCenter" id="MainContent_CostCenterLabel">Cost Center</label>
+						<input name="ctl00$MainContent$CostCenter" type="text" id="MainContent_CostCenter" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_RecOrder" id="MainContent_RecOrderLabel">Rec Order</label>
+						<input name="ctl00$MainContent$RecOrder" type="text" id="MainContent_RecOrder" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="MainContent_CDTSRegistered" id="MainContent_CDTSRegisteredLabel">CDTS Registered</label>
+						<select name="ctl00$MainContent$CDTSRegistered" id="MainContent_CDTSRegistered" class="form-control">
+							<option value="">Select</option>
+							<option value="True">Yes</option>
+							<option value="False">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="MainContent_Remarks" id="MainContent_RemarksLabel">Remarks</label>
+						<textarea name="ctl00$MainContent$Remarks" rows="2" cols="20" id="MainContent_Remarks" class="form-control"></textarea>
+					</div>
+					<input type="submit" name="ctl00$MainContent$Submit" value="Submit" id="MainContent_Submit" class="btn btn-default" />      
+					<div class="aspNetHidden">
+						<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CCEA6585" />
+						<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEHnYiNQhr/b5/jfVVhu7qBx3CIwkDRekDqsKYsF+OaQTNrvSSxWrdVkFXe/8LcGe0TE1d+cBtkezzc2Die+qF19+vmG6RgFjmlOAetlfx5/ehRGCH4Iml/qwwHqBtQOwo0253HfFA4GZZJajg6fCjoorEZWwTHe6w1TXl36NXjjpGr4IeTBjqj5mokB7bZebr3a2MW1SrR9zteD7AlTN187cVN9MXT0HB/cvvtNFhLlIqiFCDrZAoVLXIoCqP0UNP0vDIPYhS6e7H5xbNVe49jTqyTizjxjl4836Y/Oe33h2Mou5UmsLcgMHujsuK1OOy2asqdlslUmuFbinOscaR+ICjdZtZTw70j8shcjUU9QP6FYBPBqzM1JuAapcKBETnv0dWtFC+HTe8FYVxuBy+TrTe4IRxjBvUcJ15AVoiMASvkcwK5dHdOpR0buqSHU9Q39rP27COsBu8Xe+TxavNF2ZsisQGdl/lT8HgujNf6un44je4WYbbZqHrp1gmeWddeAL14CU/PQOakEblI+1BFMVmewzwiZ6BlwqfEogPmoDC8wYr7+rBm0TDlTgQD4WUAAIuC7w+XyAKSH84iS6gVTt+HhTbSIa6FsRCjtSlhAwmRjsEng7fJsjkl5TCgWUWr1bcsFA5fDMWPSkSj1cyLuxhaCeujXEHPRf/YGBdXiIJQ2X6YGHWiWR0SrEtOSXUXzWq1UvtvTKYKU8as4CNyvHxTSNsPKO7xtEmqie2rdQNyLzxaC8vnDvx5YKLhTtSXMLg+c1PqJvBgB2DmSxexqhHKxKXy7BubWNOiKKmn33Nhhegc6hD5yGEydFmTj5Zhz+EG10zoYsImAZi5bFqs2wiuuOGjorx+9sqxNChO01/jYUa8hUqk2MHwNH32yAHapjWbFl3gtruCLrBqvy1DRcjSbpsYL7EuQnrwQW8EGvdbW1lVZOns8l+skmv8TdK6BS9E/mUpqtOlryNm+zzPC962yCNruRMorjz48+D7Bkqd4T+UcPPTMxLCYB0VmBN5xAgIkLAJdHZult4ZXgeFFFdnRaBFyp9OxwtaZTQvJ6FmDmNBWIbwKSWX5IiqLOLlmI4zdCP4uzeAJ9Czwj62zq1+0LnighTG8UF5DrbMjdkO4RT1sXmQz0X86e6acorq3H4ins1Xdad2VkJ0riEUryjlPwDmnkTCq+1UHo1LP5mTYS3k5ru98jdYnLuISSH4xFyc8oQmTfTpZUmxkRKXFKzzrpdFXt/EdRAUGqex5ESkUNYizvvW/6h++dET08PUnzo+/yPiORaExyFvtbiIsUffePU1NrnVvppESf9kFUPkd76IJva6CNOTgqdS6NhM0tE9b1rGMXS6AJpbFvRB219rMcAxLlvwBqiLzosKJjEGzPLPSlWaJTZWu1GNgr2fQsb+NJqsmoDHjrTkB0Ay8" />
+					</div>
+				</form>
+			</div>
             <!-- end main content -->
             <div id="def-preFooter">
-                <!-- Write closure fall-back static file -->
-                			<div class="row pagedetails">
-				<div class="col-sm-5 col-xs-12 datemod">
-					<dl id="wb-dtmd">
-						<dt>Date modified:&#32;</dt>
-						<dd><time property="dateModified">2016-05-04</time></dd>
-					</dl>
+                <div class="row pagedetails">
+					<div class="col-sm-5 col-xs-12 datemod">
+						<dl id="wb-dtmd">
+							<dt>Date modified:&#32;</dt>
+							<dd><time property="dateModified">2016-05-04</time></dd>
+						</dl>
+					</div>
 				</div>
-			</div>
             </div>
-            <!-- Write closure template -->
             <script type="text/javascript">
                 var defPreFooter = document.getElementById("def-preFooter");
                 defPreFooter.outerHTML = wet.builder.preFooter({"cdnEnv":"esdcprod","showPostContent":true,"showFeedback":true,"showShare":true});
             </script>
         </main>
         <div id="def-footer">
-            <!-- Write closure fall-back static file -->
-            		<footer role="contentinfo" id="wb-info">
-			<!-- If you want to use the global navigation 
-			<nav role="navigation" class="container wb-navcurr">
-				<h2 class="wb-inv">About government</h2>
-				<ul class="list-unstyled colcount-sm-2 colcount-md-4">
-					<li><a href="https://intranet.canada.ca/psc-fsc/index-eng.asp">News</a></li>
-					<li><a href="https://intranet.canada.ca/hr-rh/index-eng.asp">Human resources</a></li>
-					<li><a href="https://intranet.canada.ca/cdl-dca/index-eng.asp">Career development and learning</a></li>
-					<li><a href="https://intranet.canada.ca/wg-tg/index-eng.asp">Services and tools</a></li>
-				</ul>
-			</nav>
-			-->
-			<nav role="navigation" class="container wb-navcurr">
-				<h2 class="wb-inv">About this site</h2>
-				<ul class="list-unstyled colcount-sm-2 colcount-md-4">
-					<!-- Add your customized links to populate the footer -->
-					<li><a href="#">Link 1</a></li>
-				</ul>
-			</nav>
-			<div class="brand">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-md-8">
-							<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
-						</div>
-						<div class="col-xs-6 visible-sm visible-xs tofpg">
-							<a href="#wb-cont">Top of Page<span class="glyphicon glyphicon-chevron-up"></span></a>
-						</div>
-						<div class="col-xs-6 col-md-4 text-right">
-							<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
+            <footer role="contentinfo" id="wb-info">
+				<nav role="navigation" class="container wb-navcurr">
+					<h2 class="wb-inv">About this site</h2>
+					<ul class="list-unstyled colcount-sm-2 colcount-md-4">
+						<!-- Add your customized links to populate the footer -->
+						<li><a href="#">Link 1</a></li>
+					</ul>
+				</nav>
+				<div class="brand">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-8">
+								<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
+							</div>
+							<div class="col-xs-6 visible-sm visible-xs tofpg">
+								<a href="#wb-cont">Top of Page<span class="glyphicon glyphicon-chevron-up"></span></a>
+							</div>
+							<div class="col-xs-6 col-md-4 text-right">
+								<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
         </div>
         <!-- Write closure template -->
         <script type="text/javascript">
@@ -474,18 +387,14 @@
             defFooter.outerHTML = wet.builder.appFooter({"cdnEnv":"esdcprod","showFeatures":true,"subTheme":"esdc"});
         </script>
         <!-- Write closure template -->
-            <script type="text/javascript">
-                document.write(wet.builder.refFooter({"cdnEnv":"esdcprod","exitScript":false,"displayModal":false}));
-            </script>
-        
-    
-<!-- Visual Studio Browser Link -->
-<script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Firefox","requestId":"169882b24d284b32bf3d214794904e6d"}
-</script>
-<script type="text/javascript" src="http://localhost:2095/245f794e64c94dc2908d5b398ffa6287/browserLink" async="async"></script>
-<!-- End Browser Link -->
-
-</body>
+        <script type="text/javascript">
+            document.write(wet.builder.refFooter({"cdnEnv":"esdcprod","exitScript":false,"displayModal":false}));
+        </script>    
+		<!-- Visual Studio Browser Link -->
+		<script type="application/json" id="__browserLink_initializationData">
+			{"appName":"Firefox","requestId":"169882b24d284b32bf3d214794904e6d"}
+		</script>
+		<script type="text/javascript" src="http://localhost:2095/245f794e64c94dc2908d5b398ffa6287/browserLink" async="async"></script>
+	</body>
 </html>
 
