@@ -17,7 +17,7 @@ This Data Control System Mockup was born from a need in Accessibility Testing at
 - WET (Web Experience Toolkit)
 
 ## Contributing
-If you're interested in contributing to the Web Standards' Data Control System Mockup,, here is what you'll need.
+If you're interested in contributing to the Web Standards' Data Control System Mockup, here is what you'll need.
 
 Skills :
 - Very good knowledge of WET
