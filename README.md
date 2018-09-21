@@ -31,5 +31,5 @@ Setup :
 - Pull `git pull`
 
 ## Links
-[Employment and Social Development Canada](https://www.canada.ca/en/employment-social-development.html)
-[Web Experience Toolkit](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Employment and Social Development Canada](https://www.canada.ca/en/employment-social-development.html)
+- [Web Experience Toolkit](https://wet-boew.github.io/v4.0-ci/index-en.html)
