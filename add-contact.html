@@ -1,22 +1,18 @@
 
-<!DOCTYPE html>
 
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="en" dir="ltr">
+<![endif]-->
 <html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
-    <head>
-        <meta charset="utf-8"/>
-        <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-        <title>Add Contact</title>
-        <meta content="width=device-width,initial-scale=1" name="viewport"/>
-        <!-- Load closure template scripts -->
-        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/soyutils.js"></script> 
-        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/wet-en.js"></script> 
-        <noscript>
-            <!-- Write closure fall-back static file -->
-            		<!--[if gte IE 9 | !IE ]><!-->
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8"/>
+		<title>Add Contact</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport"/>
+		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/soyutils.js"></script> 
+		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/wet-en.js"></script> 
+		<noscript>
 		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="icon" type="image/x-icon">
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/theme.min.css">
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/gctheme.css">
@@ -25,268 +21,257 @@
 		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="shortcut icon" />
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/ie8-theme.min.css" />
 		<![endif]-->
-		<!--[if lte IE 9]><![endif]-->
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/noscript.min.css" />
 		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/cdtsfixes.css">
-        </noscript>
-         <!-- Write closure template -->
-        <script type="text/javascript">
-            document.write(wet.builder.refTop({"cdnEnv":"esdcprod","subTheme":"esdc","isApplication":true}));
-        </script>
-
-        <link rel='stylesheet' type='text/css' href='style.css'>
-
-        <!-- GoC.WebTemplate Version ASPX 4.0.27.1 -->
-        <!-- GoC.WebTemplate.Core Version 1.0.6596.29129 -->
-    </head>
-    <body vocab="http://schema.org/" typeof="WebPage">
-                        
-        <div id="def-top">
-            <!-- Write closure fall-back static file -->
-            		<ul id="wb-tphp">
+		</noscript>
+		<script type="text/javascript">
+		document.write(wet.builder.refTop({"cdnEnv":"esdcprod","subTheme":"esdc","isApplication":true}));
+		</script>
+		<link rel='stylesheet' type='text/css' href='style.css'>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		<!-- Write closure fall-back static file -->
+		<ul id="wb-tphp">
 			<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
 			<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
 			<!-- If you have a section menu 
-			<li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-sec">Skip to section menu</a></li>
-			-->
+				<li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-sec">Skip to section menu</a></li>
+				-->
 		</ul>
 		<header role="banner">
 			<div id="wb-bnr">
 				<div id="app-brand">
 					<div class="container">
-						<div class="row">
-							<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
-								<div class="app-name">
-									<a href="https://intranet.canada.ca/index-eng.asp"><span><span class="bold-gc">GC</span>intranet</span></a>
-								</div>
-							</section>
-							<section id="wb-gctools" class="col-lg-6 visible-lg">
-								<div class="pull-left tool-link">
-									<a href="https://gcconnex.gc.ca/splash/">
-									<span class="bold-gc">GC</span>connex</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
-									<span class="bold-gc">GC</span>pedia</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
-									<span class="bold-gc">GC</span>directory</a>
-								</div>
-								<div class="pull-left tool-link">
-									<a href="https://gccollab.ca/splash/">
-									<span class="bold-gc">GC</span>collab</a>
-								</div>
-							</section>
-							<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs text-right">
-								<h2 class="wb-inv">Language selection</h2>
-								<div class="row">
-									<div class="col-md-12">
-										<ul class="list-inline margin-bottom-none gcbarlng">
-											<li><a lang="fr" href="#">Français</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-							<!-- Remove the whole <section> if search is disabled -->
-							<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-								<h2>Search</h2>
-								<form action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx" method="get" name="cse-search-box" role="search" class="form-inline">
-									<div class="form-group">
-										<label for="wb-srch-q" class="wb-inv">Search website</label>
-										<input class="wb-srch-q form-control pull-right" id="wb-srch-q" name="q"  value="" size="21" maxlength="150" placeholder="Search GCintranet">
-										<input type="hidden" name="a" value="s" />
-										<input type="hidden" name="s" value="1" />
-										<input type="hidden" name="chk2" value="True" />
-									</div>
-									<div class="form-group submit">
-										<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-									</div>
-								</form>
-							</section>
-							<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
-								<!-- Adjust the <h2>, title and <span> below whether you are using a search and/or a menu -->
-								<h2>Search and menus</h2>
-								<ul class="list-inline text-right chvrn">
-									<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><!-- Remove the following <span> if search is turned off --><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span><!-- Remove the following </span> if search is turned off --></span></a></li>
+					<div class="row">
+						<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
+							<div class="app-name">
+								<a href="https://intranet.canada.ca/index-eng.asp"><span><span class="bold-gc">GC</span>intranet</span></a>
+							</div>
+						</section>
+						<section id="wb-gctools" class="col-lg-6 visible-lg">
+							<div class="pull-left tool-link">
+								<a href="https://gcconnex.gc.ca/splash/">
+								<span class="bold-gc">GC</span>connex</a>
+							</div>
+							<div class="pull-left tool-link">
+								<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
+								<span class="bold-gc">GC</span>pedia</a>
+							</div>
+							<div class="pull-left tool-link">
+								<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
+								<span class="bold-gc">GC</span>directory</a>
+							</div>
+							<div class="pull-left tool-link">
+								<a href="https://gccollab.ca/splash/">
+								<span class="bold-gc">GC</span>collab</a>
+							</div>
+						</section>
+						<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs text-right">
+							<h2 class="wb-inv">Language selection</h2>
+							<div class="row">
+								<div class="col-md-12">
+								<ul class="list-inline margin-bottom-none gcbarlng">
+									<li><a lang="fr" href="#">Français</a></li>
 								</ul>
-								<div id="mb-pnl"></div>
-							</section>
-						</div>
-						<div id="tools-sm" class="row visible-md">
-							<section id="tool-container-sm" class="col-md-12 col-sm-12">
-								<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span class="bold-gc">GC</span>connex</a></div>
-								<div class="pull-left tool-link"><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span class="bold-gc">GC</span>pedia</a></div>
-								<div class="pull-left tool-link"><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span class="bold-gc">GC</span>directory</a></div>
-								<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span class="bold-gc">GC</span>collab</a></div>
-							</section>
-						</div>		
+								</div>
+							</div>
+						</section>
+						<!-- Remove the whole <section> if search is disabled -->
+						<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+							<h2>Search</h2>
+							<form action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx" method="get" name="cse-search-box" role="search" class="form-inline">
+								<div class="form-group">
+								<label for="wb-srch-q" class="wb-inv">Search website</label>
+								<input class="wb-srch-q form-control pull-right" id="wb-srch-q" name="q"  value="" size="21" maxlength="150" placeholder="Search GCintranet">
+								<input type="hidden" name="a" value="s" />
+								<input type="hidden" name="s" value="1" />
+								<input type="hidden" name="chk2" value="True" />
+								</div>
+								<div class="form-group submit">
+								<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+								</div>
+							</form>
+						</section>
+						<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+							<!-- Adjust the <h2>, title and <span> below whether you are using a search and/or a menu -->
+							<h2>Search and menus</h2>
+							<ul class="list-inline text-right chvrn">
+								<li>
+								<a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button">
+									<!-- Remove the following <span> if search is turned off -->
+									<span class="glyphicon glyphicon-search">
+										<span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span><!-- Remove the following </span> if search is turned off -->
+									</span>
+								</a>
+								</li>
+							</ul>
+							<div id="mb-pnl"></div>
+						</section>
 					</div>
-				</div>				
+					<div id="tools-sm" class="row visible-md">
+						<section id="tool-container-sm" class="col-md-12 col-sm-12">
+							<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span class="bold-gc">GC</span>connex</a></div>
+							<div class="pull-left tool-link"><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span class="bold-gc">GC</span>pedia</a></div>
+							<div class="pull-left tool-link"><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span class="bold-gc">GC</span>directory</a></div>
+							<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span class="bold-gc">GC</span>collab</a></div>
+						</section>
+					</div>
+					</div>
+				</div>
 			</div>
 			<div id="gcappbanner">
 				<div class="container">
 					<div class="row gc-intra-br">
-						<!-- Change class to "col-md-10" if you have a sign in/out button -->
-						<div id="wb-sttl" class="col-md-12">
-							<!-- If you're on a secure page, add in the <i> -->
-							<!-- Add in your application name below -->
-							<a href="#"><span><!--<i class="glyphicon glyphicon-lock mrgn-rght-md"></i>-->Web Standards Data Control System</span></a>
-						</div>
-						<!-- If you want to use the sign in/out buttons 
+					<!-- Change class to "col-md-10" if you have a sign in/out button -->
+					<div id="wb-sttl" class="col-md-12">
+						<!-- If you're on a secure page, add in the <i> -->
+						<!-- Add in your application name below -->
+						<a href="#">
+							<span>
+								<!--<i class="glyphicon glyphicon-lock mrgn-rght-md"></i>-->Web Standards Data Control System
+							</span>
+						</a>
+					</div>
+					<!-- If you want to use the sign in/out buttons 
 						<div class="text-right col-md-2">
-							<div class="row">
-								<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign out</a></p>
-								<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign in</a></p>
-							</div>
+						<div class="row">
+							<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign out</a></p>
+							<p><a href="#" class="btn btn-default btn-signoff"><i class="glyphicon glyphicon-off"></i>Sign in</a></p>
+						</div>
 						</div>
 						-->
 					</div>
 				</div>
 			</div>
 			<!-- Remove the whole <nav> if you want to disable breadcrumbs -->
-		</header>            
-        </div>
-        <!-- Write closure template -->
-        <main role="main" property="mainContentOfPage" class="container">
-			<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
-				<div class="pnl-strt container visible-md visible-lg nvbar">
-					<h2>Topics menu</h2>
-					<div class="row">
-						<ul class="list-inline menu" role="menubar">
-							<li class="hidden-md hidden-lg">
-								<a href="#mnuTools" class="item" tabindex="0" aria-posinset="1" aria-setsize="7" role="menuitem" aria-haspopup="true">GCTools<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="mnuTools" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="https://gcconnex.gc.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>connex</a></li>
-									<li><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en" class="GCTBannerOnclick" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>pedia</a></li>
-									<li><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002" class="GCTBannerOnclick" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>directory</a></li>
-									<li><a href="https://gccollab.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>collab</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="index.html" class="item" tabindex="-1" aria-posinset="2" aria-setsize="7" role="menuitem">Home</a>
-							</li>
-							<li class="">
-								<a href="#inventory" class="item" tabindex="-1" aria-posinset="3" aria-setsize="7" role="menuitem" aria-haspopup="true">Inventory<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="inventory" role="menu" aria-expanded="false" aria-hidden="true" tabindex="-1">
-									<li><a href="assets.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Assets</a></li>
-									<li><a href="add-asset.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Asset</a></li>
-									<li><a href="asset-contacts.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Asset Contacts</a></li>
-									<li><a href="cdts-wet.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">CDTS/WET Review</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#assessments" class="item" tabindex="-1" aria-posinset="4" aria-setsize="7" role="menuitem" aria-haspopup="true">Assessments<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="assessments" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="releases.html" tabindex="-1" aria-posinset="1" aria-setsize="2" role="menuitem">Releases</a></li>
-									<li><a href="add-release.html" tabindex="-1" aria-posinset="2" aria-setsize="2" role="menuitem">Add Release</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#admin" class="item" tabindex="-1" aria-posinset="5" aria-setsize="7" role="menuitem" aria-haspopup="true">Admin<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="admin" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="contacts.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Contacts</a></li>
-									<li><a href="add-contact.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Contact</a></li>
-									<li><a href="branches.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Branches</a></li>
-									<li><a href="add-branch.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">Add Branch</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="#reporting" class="item" tabindex="-1" aria-posinset="6" aria-setsize="7" role="menuitem" aria-haspopup="true">Reporting<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="reporting" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="compliance-report.html" tabindex="-1" aria-posinset="1" aria-setsize="1" role="menuitem">Compliance Report</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="faq.html" class="item" tabindex="-1" aria-posinset="7" aria-setsize="7" role="menuitem">FAQ</a>
-							</li>
+		</header>
+		</div>
+		<!-- Write closure template -->
+		<main role="main" property="mainContentOfPage" class="container">
+		<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
+			<div class="pnl-strt container visible-md visible-lg nvbar">
+				<h2>Topics menu</h2>
+				<div class="row">
+					<ul class="list-inline menu" role="menubar">
+					<li class="hidden-md hidden-lg">
+						<a href="#mnuTools" class="item" tabindex="0" aria-posinset="1" aria-setsize="7" role="menuitem" aria-haspopup="true">GCTools<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="sm list-unstyled" id="mnuTools" role="menu" aria-expanded="false" aria-hidden="true">
+							<li><a href="https://gcconnex.gc.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>connex</a></li>
+							<li><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en" class="GCTBannerOnclick" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>pedia</a></li>
+							<li><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002" class="GCTBannerOnclick" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>directory</a></li>
+							<li><a href="https://gccollab.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>collab</a></li>
 						</ul>
-					</div>
+					</li>
+					<li>
+						<a href="index.html" class="item" tabindex="-1" aria-posinset="2" aria-setsize="7" role="menuitem">Home</a>
+					</li>
+					<li class="">
+						<a href="#inventory" class="item" tabindex="-1" aria-posinset="3" aria-setsize="7" role="menuitem" aria-haspopup="true">Inventory<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="sm list-unstyled" id="inventory" role="menu" aria-expanded="false" aria-hidden="true" tabindex="-1">
+							<li><a href="assets.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Assets</a></li>
+							<li><a href="add-asset.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Asset</a></li>
+							<li><a href="asset-contacts.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Asset Contacts</a></li>
+							<li><a href="cdts-wet.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">CDTS/WET Review</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#assessments" class="item" tabindex="-1" aria-posinset="4" aria-setsize="7" role="menuitem" aria-haspopup="true">Assessments<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="sm list-unstyled" id="assessments" role="menu" aria-expanded="false" aria-hidden="true">
+							<li><a href="releases.html" tabindex="-1" aria-posinset="1" aria-setsize="2" role="menuitem">Releases</a></li>
+							<li><a href="add-release.html" tabindex="-1" aria-posinset="2" aria-setsize="2" role="menuitem">Add Release</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#admin" class="item" tabindex="-1" aria-posinset="5" aria-setsize="7" role="menuitem" aria-haspopup="true">Admin<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="sm list-unstyled" id="admin" role="menu" aria-expanded="false" aria-hidden="true">
+							<li><a href="contacts.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Contacts</a></li>
+							<li><a href="add-contact.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Contact</a></li>
+							<li><a href="branches.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Branches</a></li>
+							<li><a href="add-branch.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">Add Branch</a></li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#reporting" class="item" tabindex="-1" aria-posinset="6" aria-setsize="7" role="menuitem" aria-haspopup="true">Reporting<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="sm list-unstyled" id="reporting" role="menu" aria-expanded="false" aria-hidden="true">
+							<li><a href="compliance-report.html" tabindex="-1" aria-posinset="1" aria-setsize="1" role="menuitem">Compliance Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="faq.html" class="item" tabindex="-1" aria-posinset="7" aria-setsize="7" role="menuitem">FAQ</a>
+					</li>
+					</ul>
 				</div>
-				<!-- DataAjaxFragmentEnd -->
-				</nav>
-            <!-- the main content -->
-            
-
-    <h1 id="wb-cont">Add Contact</h1>
-    <p>Use this form to add a new contact to the inventory. Attributes with * are required.</p>
-
-    <span id="MainContent_Display" class="display"></span>
-    
-    <div class="wb-frmvld">
-        <form method="post" action="./add-contact.aspx" id="ctl00">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk1MTIyNDg3MQ9kFgJmD2QWAmYPZBYCAgMPZBYCAgsPEA8WAh4LXyFEYXRhQm91bmRnZA8WBgIBAgICAwIEAgUCBhYGEAUIQXNzZXNzb3IFATZnEAUZQXNzaXN0YW50IERlcHV0eSBNaW5pc3RlcgUBMWcQBQhEaXJlY3RvcgUBMmcQBRBEaXJlY3RvciBHZW5lcmFsBQEzZxAFB01hbmFnZXIFATRnEAUFT3RoZXIFATVnZGRk+b78tA2Oo64jtkNEMom8BS5lGQChsZQz9dk6xiy746Q=" />
-</div>
-
-            
-            <div class="form-group">
-                <label for="MainContent_LastName" id="MainContent_LastNameLabel">Last Name *</label>
-                <input name="ctl00$MainContent$LastName" type="text" id="MainContent_LastName" class="form-control" required="required" />
-            </div>
-            
-            <div class="form-group">
-                <label for="MainContent_FirstName" id="MainContent_FirstNameLabel">First Name *</label>
-                <input name="ctl00$MainContent$FirstName" type="text" id="MainContent_FirstName" class="form-control" required="required" />
-            </div>
-            
-            <div class="form-group">
-                <label for="MainContent_ContactPosition" id="MainContent_ContactPositionLabel">Position *</label>
-                <select name="ctl00$MainContent$ContactPosition" id="MainContent_ContactPosition" class="form-control" required="required">
-	<option value="">Select</option>
-	<option value="6">Assessor</option>
-	<option value="1">Assistant Deputy Minister</option>
-	<option value="2">Director</option>
-	<option value="3">Director General</option>
-	<option value="4">Manager</option>
-	<option value="5">Other</option>
-
-</select>
-            </div>
-            
-            <div class="form-group">
-                <label for="MainContent_Email" id="MainContent_EmailLabel">Email</label>
-                <input name="ctl00$MainContent$Email" type="email" id="MainContent_Email" class="form-control" />
-            </div>
-            
-            <div class="form-group">
-                <label for="MainContent_Phone" id="MainContent_PhoneLabel">Phone</label>
-                <input name="ctl00$MainContent$Phone" type="tel" id="MainContent_Phone" class="form-control" />
-            </div>
-            
-            <input type="submit" name="ctl00$MainContent$Submit" value="Submit" id="MainContent_Submit" class="btn btn-default" />
-        
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="071C3121" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA21vWKOV6W8tnwQ0NSYCJXbk/pmHSjOyg8AoiwEKvXyKSKQ/kH+qdefPUpfEjHO2SBjxYka1TOIcmk8rs/afZ2HNIAwXVomdNQRyQq+FlnnYCcfCzwVFqG6SnC24WuHPhL6r3x516fI1wVkDBY8VFEhhSWV+4TWbS7f2fTq/GqXE+/7NaSh8/WZgOXBdvVSQ6QuwnhQbpOPCzAMgUdJPiJJKIUGbjNo/tLu6Y37oucwuP8eMe4Ip4FpyJWlnV+CKavX2sxwDEuW/AGqIvOiwomMFkNuB87L2kMtJjA38QJGUXi2DG3L0C8EQevpwHmRe0g=" />
-</div></form>
-    </div>
-
-
-            <!-- end main content -->
-            <div id="def-preFooter">
-                <!-- Write closure fall-back static file -->
-                			<div class="row pagedetails">
+			</div>
+			<!-- DataAjaxFragmentEnd -->
+		</nav>
+		<!-- the main content -->
+		<h1 id="wb-cont">Add Contact</h1>
+		<p>Use this form to add a new contact to the inventory. Attributes with * are required.</p>
+		<span id="MainContent_Display" class="display"></span>
+		<div class="wb-frmvld">
+			<form method="post" action="./add-contact.aspx" id="ctl00">
+				<div class="aspNetHidden">
+					<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk1MTIyNDg3MQ9kFgJmD2QWAmYPZBYCAgMPZBYCAgsPEA8WAh4LXyFEYXRhQm91bmRnZA8WBgIBAgICAwIEAgUCBhYGEAUIQXNzZXNzb3IFATZnEAUZQXNzaXN0YW50IERlcHV0eSBNaW5pc3RlcgUBMWcQBQhEaXJlY3RvcgUBMmcQBRBEaXJlY3RvciBHZW5lcmFsBQEzZxAFB01hbmFnZXIFATRnEAUFT3RoZXIFATVnZGRk+b78tA2Oo64jtkNEMom8BS5lGQChsZQz9dk6xiy746Q=" />
+				</div>
+				<div class="form-group">
+					<label for="MainContent_LastName" id="MainContent_LastNameLabel">Last Name *</label>
+					<input name="ctl00$MainContent$LastName" type="text" id="MainContent_LastName" class="form-control" required="required" />
+				</div>
+				<div class="form-group">
+					<label for="MainContent_FirstName" id="MainContent_FirstNameLabel">First Name *</label>
+					<input name="ctl00$MainContent$FirstName" type="text" id="MainContent_FirstName" class="form-control" required="required" />
+				</div>
+				<div class="form-group">
+					<label for="MainContent_ContactPosition" id="MainContent_ContactPositionLabel">Position *</label>
+					<select name="ctl00$MainContent$ContactPosition" id="MainContent_ContactPosition" class="form-control" required="required">
+					<option value="">Select</option>
+					<option value="6">Assessor</option>
+					<option value="1">Assistant Deputy Minister</option>
+					<option value="2">Director</option>
+					<option value="3">Director General</option>
+					<option value="4">Manager</option>
+					<option value="5">Other</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="MainContent_Email" id="MainContent_EmailLabel">Email</label>
+					<input name="ctl00$MainContent$Email" type="email" id="MainContent_Email" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="MainContent_Phone" id="MainContent_PhoneLabel">Phone</label>
+					<input name="ctl00$MainContent$Phone" type="tel" id="MainContent_Phone" class="form-control" />
+				</div>
+				<input type="submit" name="ctl00$MainContent$Submit" value="Submit" id="MainContent_Submit" class="btn btn-default" />
+				<div class="aspNetHidden">
+					<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="071C3121" />
+					<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA21vWKOV6W8tnwQ0NSYCJXbk/pmHSjOyg8AoiwEKvXyKSKQ/kH+qdefPUpfEjHO2SBjxYka1TOIcmk8rs/afZ2HNIAwXVomdNQRyQq+FlnnYCcfCzwVFqG6SnC24WuHPhL6r3x516fI1wVkDBY8VFEhhSWV+4TWbS7f2fTq/GqXE+/7NaSh8/WZgOXBdvVSQ6QuwnhQbpOPCzAMgUdJPiJJKIUGbjNo/tLu6Y37oucwuP8eMe4Ip4FpyJWlnV+CKavX2sxwDEuW/AGqIvOiwomMFkNuB87L2kMtJjA38QJGUXi2DG3L0C8EQevpwHmRe0g=" />
+				</div>
+			</form>
+		</div>
+		<!-- end main content -->
+		<div id="def-preFooter">
+			<!-- Write closure fall-back static file -->
+			<div class="row pagedetails">
 				<div class="col-sm-5 col-xs-12 datemod">
 					<dl id="wb-dtmd">
-						<dt>Date modified:&#32;</dt>
-						<dd><time property="dateModified">2016-05-04</time></dd>
+					<dt>Date modified:&#32;</dt>
+					<dd><time property="dateModified">2016-05-04</time></dd>
 					</dl>
 				</div>
 			</div>
-            </div>
-            <!-- Write closure template -->
-            <script type="text/javascript">
-                var defPreFooter = document.getElementById("def-preFooter");
-                defPreFooter.outerHTML = wet.builder.preFooter({"cdnEnv":"esdcprod","showPostContent":true,"showFeedback":true,"showShare":true});
-            </script>
-        </main>
-        <div id="def-footer">
-            <!-- Write closure fall-back static file -->
-            		<footer role="contentinfo" id="wb-info">
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defPreFooter = document.getElementById("def-preFooter");
+			defPreFooter.outerHTML = wet.builder.preFooter({"cdnEnv":"esdcprod","showPostContent":true,"showFeedback":true,"showShare":true});
+		</script>
+		</main>
+		<div id="def-footer">
+		<!-- Write closure fall-back static file -->
+		<footer role="contentinfo" id="wb-info">
 			<!-- If you want to use the global navigation 
-			<nav role="navigation" class="container wb-navcurr">
+				<nav role="navigation" class="container wb-navcurr">
 				<h2 class="wb-inv">About government</h2>
 				<ul class="list-unstyled colcount-sm-2 colcount-md-4">
 					<li><a href="https://intranet.canada.ca/psc-fsc/index-eng.asp">News</a></li>
@@ -294,8 +279,8 @@
 					<li><a href="https://intranet.canada.ca/cdl-dca/index-eng.asp">Career development and learning</a></li>
 					<li><a href="https://intranet.canada.ca/wg-tg/index-eng.asp">Services and tools</a></li>
 				</ul>
-			</nav>
-			-->
+				</nav>
+				-->
 			<nav role="navigation" class="container wb-navcurr">
 				<h2 class="wb-inv">About this site</h2>
 				<ul class="list-unstyled colcount-sm-2 colcount-md-4">
@@ -306,38 +291,34 @@
 			<div class="brand">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-md-8">
-							<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
-						</div>
-						<div class="col-xs-6 visible-sm visible-xs tofpg">
-							<a href="#wb-cont">Top of Page<span class="glyphicon glyphicon-chevron-up"></span></a>
-						</div>
-						<div class="col-xs-6 col-md-4 text-right">
-							<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
-						</div>
+					<div class="col-xs-12 col-md-8">
+						<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
+					</div>
+					<div class="col-xs-6 visible-sm visible-xs tofpg">
+						<a href="#wb-cont">Top of Page<span class="glyphicon glyphicon-chevron-up"></span></a>
+					</div>
+					<div class="col-xs-6 col-md-4 text-right">
+						<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
+					</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-        </div>
-        <!-- Write closure template -->
-        <script type="text/javascript">
-            var defFooter = document.getElementById("def-footer");
-            defFooter.outerHTML = wet.builder.appFooter({"cdnEnv":"esdcprod","showFeatures":true,"subTheme":"esdc"});
-        </script>
-        <!-- Write closure template -->
-            <script type="text/javascript">
-                document.write(wet.builder.refFooter({"cdnEnv":"esdcprod","exitScript":false,"displayModal":false}));
-            </script>
-        
-    
-<!-- Visual Studio Browser Link -->
-<script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Firefox","requestId":"08ffb04a708a499c9bd0c6fac4fdda85"}
-</script>
-<script type="text/javascript" src="http://localhost:2095/245f794e64c94dc2908d5b398ffa6287/browserLink" async="async"></script>
-<!-- End Browser Link -->
-
-</body>
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+		var defFooter = document.getElementById("def-footer");
+		defFooter.outerHTML = wet.builder.appFooter({"cdnEnv":"esdcprod","showFeatures":true,"subTheme":"esdc"});
+		</script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+		document.write(wet.builder.refFooter({"cdnEnv":"esdcprod","exitScript":false,"displayModal":false}));
+		</script>
+		<!-- Visual Studio Browser Link -->
+		<script type="application/json" id="__browserLink_initializationData">
+		{"appName":"Firefox","requestId":"08ffb04a708a499c9bd0c6fac4fdda85"}
+		</script>
+		<script type="text/javascript" src="http://localhost:2095/245f794e64c94dc2908d5b398ffa6287/browserLink" async="async"></script>
+		<!-- End Browser Link -->
+	</body>
 </html>
-
