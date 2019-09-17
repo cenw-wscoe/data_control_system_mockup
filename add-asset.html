@@ -7,175 +7,38 @@
         <title>Add Asset</title>
         <meta content="width=device-width,initial-scale=1" name="viewport"/>
         <!-- Load closure template scripts -->
-        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/soyutils.js"></script> 
-        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_28/cdts/compiled/wet-en.js"></script> 
+        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcweb/v4_0_31/cdts/compiled/soyutils.js"></script> 
+        <script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/wet/gcweb/v4_0_31/cdts/compiled/wet-en.js"></script> 
         <noscript>
             <!-- Write closure fall-back static file -->
-		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="icon" type="image/x-icon">
-		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/theme.min.css">
-		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/gctheme.css">
+		<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/css/theme.min.css">
+		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/cdts/gctheme.css">
 		<!--<![endif]-->
 		<!--[if lt IE 9]>
-			<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/favicon.ico" rel="shortcut icon" />
-			<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/ie8-theme.min.css" />
+			<link href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+			<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/css/ie8-theme.min.css" />
 			<![endif]-->
 		<!--[if lte IE 9]><![endif]-->
-		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/css/noscript.min.css" />
-		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/cdtsfixes.css">
+		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/css/noscript.min.css" />
+		<link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/cdts/cdtsfixes.css">
         </noscript>
          <!-- Write closure template -->
         <script type="text/javascript">
-            document.write(wet.builder.refTop({"cdnEnv":"esdcprod","subTheme":"esdc","isApplication":true}));
+            document.write(wet.builder.refTop({"cdnEnv":"esdcprod","isApplication":true}));
         </script>
         <link rel='stylesheet' type='text/css' href='style.css'>
     </head>
     <body vocab="http://schema.org/" typeof="WebPage">
         <div id="def-top">
-            <ul id="wb-tphp">
-				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
-				<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
-			</ul>
-			<!-- GC Menu -->
-			<header role="banner">
-				<div id="wb-bnr">
-					<div id="app-brand">
-						<div class="container">
-							<div class="row">
-								<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
-									<div class="app-name">
-										<a href="https://intranet.canada.ca/index-eng.asp"><span><span class="bold-gc">GC</span>intranet</span></a>
-									</div>
-								</section>
-								<section id="wb-gctools" class="col-lg-6 visible-lg">
-									<div class="pull-left tool-link">
-										<a href="https://gcconnex.gc.ca/splash/">
-										<span class="bold-gc">GC</span>connex</a>
-									</div>
-									<div class="pull-left tool-link">
-										<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
-										<span class="bold-gc">GC</span>pedia</a>
-									</div>
-									<div class="pull-left tool-link">
-										<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
-										<span class="bold-gc">GC</span>directory</a>
-									</div>
-									<div class="pull-left tool-link">
-										<a href="https://gccollab.ca/splash/">
-										<span class="bold-gc">GC</span>collab</a>
-									</div>
-								</section>
-								<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs text-right">
-									<h2 class="wb-inv">Language selection</h2>
-									<div class="row">
-										<div class="col-md-12">
-											<ul class="list-inline margin-bottom-none gcbarlng">
-												<li><a lang="fr" href="#">Français</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-									<h2>Search</h2>
-									<form action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx" method="get" name="cse-search-box" role="search" class="form-inline">
-										<div class="form-group">
-											<label for="wb-srch-q" class="wb-inv">Search website</label>
-											<input class="wb-srch-q form-control pull-right" id="wb-srch-q" name="q"  value="" size="21" maxlength="150" placeholder="Search GCintranet">
-											<input type="hidden" name="a" value="s" />
-											<input type="hidden" name="s" value="1" />
-											<input type="hidden" name="chk2" value="True" />
-										</div>
-										<div class="form-group submit">
-											<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-										</div>
-									</form>
-								</section>
-								<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
-									<h2>Search and menus</h2>
-									<ul class="list-inline text-right chvrn">
-										<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
-									</ul>
-									<div id="mb-pnl"></div>
-								</section>
-							</div>
-							<div id="tools-sm" class="row visible-md">
-								<section id="tool-container-sm" class="col-md-12 col-sm-12">
-									<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span class="bold-gc">GC</span>connex</a></div>
-									<div class="pull-left tool-link"><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span class="bold-gc">GC</span>pedia</a></div>
-									<div class="pull-left tool-link"><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span class="bold-gc">GC</span>directory</a></div>
-									<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span class="bold-gc">GC</span>collab</a></div>
-								</section>
-							</div>		
-						</div>
-					</div>				
-				</div>
-				<!-- Main Menu -->
-				<div id="gcappbanner">
-					<div class="container">
-						<div class="row gc-intra-br">
-							<div id="wb-sttl" class="col-md-12">
-								<a href="#"><span>Web Standards Data Control System</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>            
-        </div>
+		</div>
+		
+        <script type="text/javascript">
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML = wet.builder.appTop({"appName":[{"href":"/index.aspx","text":"Web Standards Data Control System"}],
+			"menuPath":"./ajax/menu-en.html","cdnEnv":"prod","lngLinks":[{"href":"?GoCTemplateCulture=fr-CA","lang":"fr","text":"Français"}],"search":true,"showPreContent":true,"topSecMenu":false});
+        </script>
         <main role="main" property="mainContentOfPage" class="container">
-			<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" typeof="SiteNavigationElement">
-				<div class="pnl-strt container visible-md visible-lg nvbar">
-					<h2>Topics menu</h2>
-					<div class="row">
-						<ul class="list-inline menu" role="menubar">
-							<li class="hidden-md hidden-lg">
-								<a href="#mnuTools" class="item" tabindex="0" aria-posinset="1" aria-setsize="7" role="menuitem" aria-haspopup="true">GCTools<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="mnuTools" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="https://gcconnex.gc.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>connex</a></li>
-									<li><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en" class="GCTBannerOnclick" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>pedia</a></li>
-									<li><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002" class="GCTBannerOnclick" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>directory</a></li>
-									<li><a href="https://gccollab.ca/splash/" class="GCTBannerOnclick" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>collab</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="index.html" class="item" tabindex="-1" aria-posinset="2" aria-setsize="7" role="menuitem">Home</a>
-							</li>
-							<li class="">
-								<a href="#inventory" class="item" tabindex="-1" aria-posinset="3" aria-setsize="7" role="menuitem" aria-haspopup="true">Inventory<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="inventory" role="menu" aria-expanded="false" aria-hidden="true" tabindex="-1">
-									<li><a href="assets.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Assets</a></li>
-									<li><a href="add-asset.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Asset</a></li>
-									<li><a href="asset-contacts.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Asset Contacts</a></li>
-									<li><a href="cdts-wet.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">CDTS/WET Review</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#assessments" class="item" tabindex="-1" aria-posinset="4" aria-setsize="7" role="menuitem" aria-haspopup="true">Assessments<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="assessments" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="releases.html" tabindex="-1" aria-posinset="1" aria-setsize="2" role="menuitem">Releases</a></li>
-									<li><a href="add-release.html" tabindex="-1" aria-posinset="2" aria-setsize="2" role="menuitem">Add Release</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#admin" class="item" tabindex="-1" aria-posinset="5" aria-setsize="7" role="menuitem" aria-haspopup="true">Admin<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="admin" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="contacts.html" tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem">Contacts</a></li>
-									<li><a href="add-contact.html" tabindex="-1" aria-posinset="2" aria-setsize="4" role="menuitem">Add Contact</a></li>
-									<li><a href="branches.html" tabindex="-1" aria-posinset="3" aria-setsize="4" role="menuitem">Branches</a></li>
-									<li><a href="add-branch.html" tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem">Add Branch</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="#reporting" class="item" tabindex="-1" aria-posinset="6" aria-setsize="7" role="menuitem" aria-haspopup="true">Reporting<span class="expicon glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="sm list-unstyled" id="reporting" role="menu" aria-expanded="false" aria-hidden="true">
-									<li><a href="compliance-report.html" tabindex="-1" aria-posinset="1" aria-setsize="1" role="menuitem">Compliance Report</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="faq.html" class="item" tabindex="-1" aria-posinset="7" aria-setsize="7" role="menuitem">FAQ</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
     		<h1 id="wb-cont">Add Asset</h1>
     		<p>Use this form to add a new asset to the inventory. Attributes with * are required.</p>
     		<span id="MainContent_Display" class="display"></span>
@@ -368,13 +231,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 col-md-8">
-								<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
+								<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/sig-blk-en.svg'></object><span class="wb-inv">Government of Canada</span></a>
 							</div>
 							<div class="col-xs-6 visible-sm visible-xs tofpg">
 								<a href="#wb-cont">Top of Page<span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 							<div class="col-xs-6 col-md-4 text-right">
-								<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
+								<object type="image/svg+xml" tabindex="-1" role="img" data='https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/wmms-blk.svg' aria-label="Symbol of the Government of Canada"></object>
 							</div>
 						</div>
 					</div>
