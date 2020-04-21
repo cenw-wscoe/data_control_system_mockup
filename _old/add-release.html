@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Add Release</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport" />
+		<script type="text/javascript"
+			src="https://ssl-templates.services.gc.ca/app/cls/wet/gcweb/v4_0_31/cdts/compiled/soyutils.js"></script>
+		<script type="text/javascript"
+			src="https://ssl-templates.services.gc.ca/app/cls/wet/gcweb/v4_0_31/cdts/compiled/wet-en.js"></script>
+		<noscript>
+			<link
+				href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/favicon.ico"
+				rel="icon" type="image/x-icon">
+			<link rel="stylesheet"
+				href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/css/theme.min.css">
+			<link rel="stylesheet"
+				href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/cdts/gctheme.css">
+			<link rel="stylesheet"
+				href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/css/noscript.min.css"
+				/>
+			<link rel="stylesheet"
+				href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/cdts/cdtsfixes.css">
+		</noscript>
+		<script type="text/javascript">
+            document.write(wet.builder.refTop({"cdnEnv":"esdcprod","isApplication":true}));
+        </script>
+		<link rel='stylesheet' type='text/css' href='style.css'>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		<div id="def-top">
+			<ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+				<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl"
+						href="#wb-info">Skip to "About this site"</a></li>
+			</ul>
+			<header role="banner">
+				<div id="wb-bnr">
+					<div id="app-brand">
+						<div class="container">
+							<div class="row">
+								<section class="col-lg-2 col-md-6 col-sm-9 col-xs-8">
+									<div class="app-name">
+										<a href="https://intranet.canada.ca/index-eng.asp"><span><span
+													class="bold-gc">GC</span>intranet</span></a>
+									</div>
+								</section>
+								<section id="wb-gctools" class="col-lg-6 visible-lg">
+									<div class="pull-left tool-link">
+										<a href="https://gcconnex.gc.ca/splash/">
+											<span class="bold-gc">GC</span>connex</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="http://www.gcpedia.gc.ca/wiki/?setlang=en">
+											<span class="bold-gc">GC</span>pedia</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002">
+											<span class="bold-gc">GC</span>directory</a>
+									</div>
+									<div class="pull-left tool-link">
+										<a href="https://gccollab.ca/splash/">
+											<span class="bold-gc">GC</span>collab</a>
+									</div>
+								</section>
+								<section id="wb-lng" class="col-lg-1 col-md-2 hidden-sm hidden-xs
+									text-right">
+									<h2 class="wb-inv">Language selection</h2>
+									<div class="row">
+										<div class="col-md-12">
+											<ul class="list-inline margin-bottom-none gcbarlng">
+												<li><a lang="fr" href="#">Français</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section id="wb-srch" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+									<h2>Search</h2>
+									<form
+										action="https://intranet.canada.ca/search-recherche/query-recherche-eng.aspx"
+										method="get" name="cse-search-box" role="search" class="form-inline">
+										<div class="form-group">
+											<label for="wb-srch-q" class="wb-inv">Search website</label>
+											<input class="wb-srch-q form-control pull-right" id="wb-srch-q"
+												name="q" value="" size="21" maxlength="150" placeholder="Search
+												GCintranet">
+											<input type="hidden" name="a" value="s" />
+											<input type="hidden" name="s" value="1" />
+											<input type="hidden" name="chk2" value="True" />
+										</div>
+										<div class="form-group submit">
+											<button type="submit" id="wb-srch-sub" class="btn btn-primary
+												btn-small" name="wb-srch-sub"><span class="glyphicon-search
+													glyphicon"></span><span class="wb-inv">Search</span></button>
+										</div>
+									</form>
+								</section>
+								<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs"
+									id="wb-glb-mn">
+									<h2>Search and menus</h2>
+									<ul class="list-inline text-right chvrn">
+										<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl"
+												class="overlay-lnk" role="button"><span
+													class="glyphicon glyphicon-search"><span class="glyphicon
+														glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+									</ul>
+									<div id="mb-pnl"></div>
+								</section>
+							</div>
+							<div id="tools-sm" class="row visible-md">
+								<section id="tool-container-sm" class="col-md-12 col-sm-12">
+									<div class="pull-left tool-link"><a href="https://gcconnex.gc.ca"><span
+												class="bold-gc">GC</span>connex</a></div>
+									<div class="pull-left tool-link"><a
+											href="http://www.gcpedia.gc.ca/wiki/?setlang=en"><span
+												class="bold-gc">GC</span>pedia</a></div>
+									<div class="pull-left tool-link"><a
+											href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"><span
+												class="bold-gc">GC</span>directory</a></div>
+									<div class="pull-left tool-link"><a href="https://gccollab.ca/splash/"><span
+												class="bold-gc">GC</span>collab</a></div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="gcappbanner">
+					<div class="container">
+						<div class="row gc-intra-br">
+							<div id="wb-sttl" class="col-md-12">
+								<a href="#"><span>Web
+										Standards Data Control System</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<main role="main" property="mainContentOfPage" class="container">
+			<nav role="navigation" id="wb-smapp" data-ajax-replace="menu.html"
+				data-trgt="mb-pnl" class="wb-menu visible-md visible-lg wb-init
+				wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
+				typeof="SiteNavigationElement">
+				<div class="pnl-strt container visible-md visible-lg nvbar">
+					<h2>Topics menu</h2>
+					<div class="row">
+						<ul class="list-inline menu" role="menubar">
+							<li class="hidden-md hidden-lg">
+								<a href="#mnuTools" class="item" tabindex="0" aria-posinset="1"
+									aria-setsize="7" role="menuitem" aria-haspopup="true">GCTools<span
+										class="expicon glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="sm list-unstyled" id="mnuTools" role="menu"
+									aria-expanded="false" aria-hidden="true">
+									<li><a href="https://gcconnex.gc.ca/splash/" class="GCTBannerOnclick"
+											tabindex="-1" aria-posinset="1" aria-setsize="4" role="menuitem"><span
+												class="bold-gc">GC</span>connex</a></li>
+									<li><a href="http://www.gcpedia.gc.ca/wiki/?setlang=en"
+											class="GCTBannerOnclick" tabindex="-1" aria-posinset="2"
+											aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>pedia</a></li>
+									<li><a href="http://gcdirectory-gcannuaire.gc.ca/en/GCD/?pgid=002"
+											class="GCTBannerOnclick" tabindex="-1" aria-posinset="3"
+											aria-setsize="4" role="menuitem"><span class="bold-gc">GC</span>directory</a></li>
+									<li><a href="https://gccollab.ca/splash/" class="GCTBannerOnclick"
+											tabindex="-1" aria-posinset="4" aria-setsize="4" role="menuitem"><span
+												class="bold-gc">GC</span>collab</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="index.html" class="item" tabindex="-1" aria-posinset="2"
+									aria-setsize="7" role="menuitem">Home</a>
+							</li>
+							<li class="">
+								<a href="#inventory" class="item" tabindex="-1" aria-posinset="3"
+									aria-setsize="7" role="menuitem" aria-haspopup="true">Inventory<span
+										class="expicon glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="sm list-unstyled" id="inventory" role="menu"
+									aria-expanded="false" aria-hidden="true" tabindex="-1">
+									<li><a href="assets.html" tabindex="-1" aria-posinset="1"
+											aria-setsize="4" role="menuitem">Assets</a></li>
+									<li><a href="add-asset.html" tabindex="-1" aria-posinset="2"
+											aria-setsize="4" role="menuitem">Add Asset</a></li>
+									<li><a href="asset-contacts.html" tabindex="-1" aria-posinset="3"
+											aria-setsize="4" role="menuitem">Asset Contacts</a></li>
+									<li><a href="cdts-wet.html" tabindex="-1" aria-posinset="4"
+											aria-setsize="4" role="menuitem">CDTS/WET Review</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#assessments" class="item" tabindex="-1" aria-posinset="4"
+									aria-setsize="7" role="menuitem" aria-haspopup="true">Assessments<span
+										class="expicon glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="sm list-unstyled" id="assessments" role="menu"
+									aria-expanded="false" aria-hidden="true">
+									<li><a href="releases.html" tabindex="-1" aria-posinset="1"
+											aria-setsize="2" role="menuitem">Releases</a></li>
+									<li><a href="add-release.html" tabindex="-1" aria-posinset="2"
+											aria-setsize="2" role="menuitem">Add Release</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#admin" class="item" tabindex="-1" aria-posinset="5"
+									aria-setsize="7" role="menuitem" aria-haspopup="true">Admin<span
+										class="expicon glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="sm list-unstyled" id="admin" role="menu"
+									aria-expanded="false" aria-hidden="true">
+									<li><a href="contacts.html" tabindex="-1" aria-posinset="1"
+											aria-setsize="4" role="menuitem">Contacts</a></li>
+									<li><a href="add-contact.html" tabindex="-1" aria-posinset="2"
+											aria-setsize="4" role="menuitem">Add Contact</a></li>
+									<li><a href="branches.html" tabindex="-1" aria-posinset="3"
+											aria-setsize="4" role="menuitem">Branches</a></li>
+									<li><a href="add-branch.html" tabindex="-1" aria-posinset="4"
+											aria-setsize="4" role="menuitem">Add Branch</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#reporting" class="item" tabindex="-1" aria-posinset="6"
+									aria-setsize="7" role="menuitem" aria-haspopup="true">Reporting<span
+										class="expicon glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="sm list-unstyled" id="reporting" role="menu"
+									aria-expanded="false" aria-hidden="true">
+									<li><a href="compliance-report.html" tabindex="-1" aria-posinset="1"
+											aria-setsize="1" role="menuitem">Compliance Report</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="faq.html" class="item" tabindex="-1" aria-posinset="7"
+									aria-setsize="7" role="menuitem">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<h1 id="wb-cont">Add Release</h1>
+			<p>Use this form to add a new release to the inventory. Attributes with * are
+				required.</p>
+
+			<span id="MainContent_Display" class="display"></span>
+
+			<div class="wb-frmvld">
+				<form method="post" action="./add-release.aspx" id="ctl00">
+					<div class="aspNetHidden">
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+							value="/wEPDwULLTIxMzYyMjc1NDYPZBYCZg9kFgJmD2QWAgIDD2QWAgIDDxAPFgIeC18hRGF0YUJvdW5kZ2QPFlYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaAhsCHAIdAh4CHwIgAiECIgIjAiQCJQImAicCKAIpAioCKwIsAi0CLgIvAjACMQIyAjMCNAI1AjYCNwI4AjkCOgI7AjwCPQI+Aj8CQAJBAkICQwJEAkUCRgJHAkgCSQJKAksCTAJNAk4CTwJQAlECUgJTAlQCVQJWFlYQBTpBYm9yaWdpbmFsIFNraWxscyBhbmQgRW1wbG95bWVudCBUcmFpbmluZyBTdHJhdGVneSAoQVNFVFMpBQExZxAFQ0Fib3JpZ2luYWwgU2tpbGxzIGFuZCBFbXBsb3ltZW50IFRyYWluaW5nIFN0cmF0ZWd5IChBU0VUUykgKFNFQ1VSRSkFATJnEAU1QXBwbGlXZWIgLSBBcHBsaWNhdGlvbiBmb3IgRW1wbG95bWVudCBCZW5lZml0cyBPbmxpbmUFATNnEAUPQmVuZWZpdHMgRmluZGVyBQE0ZxAFJUNhbmFkYSBBcHByZW50aWNlIExvYW4gU2VydmljZSBDZW50cmUFATVnEAUtQ2FuYWRhIEVkdWNhdGlvbiBTYXZpbmdzIEdyYW50cyBTeXN0ZW0gKENFU0cpBQI5NGcQBRJDYW5hZGEgTmV3cyBDZW50cmUFATZnEAUiQ2FuYWRhIFN0dWRlbnQgTG9hbnMgU3lzdGVtIChDU0xTKQUCOTVnEAVPQ2FuYWRhIFZvbHVudGVlciBBd2FyZCAoQ1ZBKSAoZm9ybWVseSBQcmltZSBNaW5pc3RlcidzIFZvbHVudGVlciBBd2FyZHMgKFBNVkEpKQUBN2cQBQlDYW5hZGEuY2EFAThnEAVUQ2FuYWRpYW4gT2NjdXBhdGlvbmFsIEhlYWx0aCAmIFNhZmV0eSAtIE11c2N1bG9za2VsZXRhbCBJbmp1cnkgRS1Ub29sIGZvciBBc3Nlc3NtZW50BQE5ZxAFLkNhbmFkaWFuIE9jY3VwYXRpb25hbCBQcm9qZWN0aW9uIFN5c3RlbSAoQ09QUykFAjEwZxAFLENhbmFkaWFuIFJldGlyZW1lbnQgSW5jb21lIENhbGN1bGF0b3IgKENSSUMpBQIxMWcQBQxDYW5MZWFybiBQcm8FAjEyZxAFDkNhbkxlYXJuIFRvb2xzBQIxM2cQBT5Db21tb24gU3lzdGVtIGZvciBHcmFudHMgYW5kIENvbnRyaWJ1dGlvbnMgKENTR0MpIFByZXNlbnRhdGlvbgUCOTdnEAU5Q29tbW9uIFN5c3RlbSBmb3IgR3JhbnRzIGFuZCBDb250cmlidXRpb25zIChDU0dDKSBSZXBvcnRzBQI5OGcQBRlDb25zdWx0aW5nIHdpdGggQ2FuYWRpYW5zBQIxNGcQBR9DUFAvT0FTIE1haWwgRnVsZmlsbG1lbnQgU3lzdGVtBQI5NmcQBQxEYXRhIEdhdGV3YXkFAjE1ZxAFM0RhdGEgR2F0ZXdheSBBZG1pbmlzdHJhdGlvbiBXZWIgU2l0ZSAtIFByZXNlbnRhdGlvbgUCOTlnEAUsRGF0YSBHYXRld2F5IFJlY2VpdmVyIFNlY3VyZWQgLSBQcmVzZW50YXRpb24FAzEwMGcQBRlEYXRhYmFzZSBvbiBNaW5pbXVtIFdhZ2VzBQIxNmcQBUhFYXJseSBDaGlsZGhvb2QgRGV2ZWxvcG1lbnQgKEVDRCkgLSBFYXJseSBMZWFybmluZyBhbmQgQ2hpbGQgQ2FyZSAoRUxDQykFAjE3ZxAFC0VsbGlzIENoYXJ0BQIxOGcQBS9FbXBsb3ltZW50IGFuZCBTb2NpYWwgRGV2ZWxvcG1lbnQgQ2FuYWRhIChFU0RDKQUCMTlnEAU5RW1wbG95bWVudCBJbnN1cmFuY2UgQmVuZWZpdHMgSW5mb3JtYXRpb24gU3lzdGVtIChFSSBCSVMpBQIyMGcQBSxFbXBsb3ltZW50IEluc3VyYW5jZSBNYWlsIEZ1bGZpbGxtZW50IFN5c3RlbQUDMTAxZxAFR0ZlZGVyYWwgQWN0aXZpdGllcyBhbmQgRXhwZW5kaXR1cmVzIGZvciBZb3VuZyBDaGlsZHJlbiBEYXRhYmFzZSAoRkFFWUMpBQIyMWcQBRxGaW5kIGEgU2VydmljZSBDYW5hZGEgT2ZmaWNlBQIyMmcQBS9HcmFudHMgYW5kIENvbnRyaWJ1dGlvbnMgT25saW5lIFNlcnZpY2VzIChHQ09TKQUCMjNnEAVBR3JvdXAgSW5mb3JtYXRpb24gU2Vzc2lvbiBQbGFubmVyIChHSVNQKSBPcmFjbGUgRm9ybXMg4oCTIFJlcG9ydHMFAzEwMmcQBUFIb21lbGVzc25lc3MgRWxlY3Ryb25pYyBSZXBvcnRpbmcgYW5kIEluZm9ybWF0aW9uIE5ldHdvcmsgKEhFUklOKQUCMjRnEAUWSW5kZXggb2YgSnVyaXNwcnVkZW5jZQUCMjVnEAUiSW5mb3JtYXRpb24gb24gRUkgRWNvbm9taWMgUmVnaW9ucwUCMjZnEAVGSW5zdXJhbmNlIFByb2Nlc3NpbmcgT2ZmaWNlIENlbnRyZSBRdWFsaXR5IE1vbml0b3JpbmcgU3lzdGVtIChJUE9DUU1TKQUDMTAzZxAFKEludGVyYWN0aXZlIEZhY3QgRmluZGluZyBTZXJ2aWNlcyAoSUZGUykFAjI3ZxAFMEludGVybmV0IENsaWVudCBBY2Nlc3MgTWFuYWdlbWVudCBTeXN0ZW0gKGlDQU1TKQUCMjhnEAUrSW50ZXJuZXQgUmVwb3J0aW5nIFNlcnZpY2UgKElSUykgKEludGVyZGVjKQUCMjlnEAUqSW50ZXJwcm92aW5jaWFsIFN0YW5kYXJkcyBSZWQgU2VhbCBQcm9ncmFtBQIzMGcQBSFKb2IgQmFuayDigJMgVHJhaW5pbmcgYW5kIENhcmVlcnMFAjMxZxAFGEpvYiBCYW5rIDIuMCAtIEVtcGxveWVycwUCMzJnEAUXSm9iIEJhbmsgMi4wIC0gSW50ZXJuYWwFAjMzZxAFFUpvYiBCYW5rIDIuMCAtIFNlYXJjaAUCMzRnEAUiSm9iIEJhbmsgMi4wIC0gU2Vla2VycyAoSm9iIE1hdGNoKQUCMzVnEAUjSm9iIEJhbmsgZm9yIEpvYiBTZWVrZXJzIChKQkZTKSAxLjAFAjM2ZxAFFUp1cmlzcHJ1ZGVuY2UgTGlicmFyeQUCMzdnEAUGTGFib3VyBQIzOGcQBSRMYWJvdXIgRWxlY3Ryb25pYyBBY2Nlc3MgRm9ybSAoTEVBRikFAjM5ZxAFH01hc3RlciBDZXJ0aWZpY2F0aW9uIExpc3QgKE1DTCkFAjQwZxAFFE1TQ0EgZS1xdWVzdGlvbm5haXJlBQI0MWcQBSBNeSBFSSBJbmZvcm1hdGlvbiBPbmxpbmUgKE1FSUlPKQUCNDJnEAUgTXkgU2VydmljZSBDYW5hZGEgQWNjb3VudCAoTVNDQSkFAjQzZxAFKk15IFNlcnZpY2UgQ2FuYWRhIEJ1c2luZXNzIEFjY291bnQgKE1TQ0JBKQUCNDRnEAUcTmF0aW9uYWwgQ2hpbGQgQmVuZWZpdCAoTkNCKQUCNDVnEAU7TmF0aW9uYWwgSW50ZWdyaXR5IEludmVzdGlnYXRpb24gU3lzdGVtIChOSUlTKSBQcmVzZW50YXRpb24FAzEwNGcQBUtOYXRpb25hbCBPY2N1cGF0aW9uYWwgQ2xhc3NpZmljYXRpb24gQ29kZSAoTk9DKSAoaW5jbHVkaW5nIENhcmVlciBIYW5kYm9vaykFAjQ2ZxAFVE5hdGlvbmFsIE9jY3VwYXRpb25hbCBDbGFzc2lmaWNhdGlvbiBNb2Rlcm5pemF0aW9uIENvbGxhYm9yYXRpdmUgV29ya3NwYWNlIChOT0NNIFdTKQUCNDdnEAUXTmF0aW9uYWwgU2VuaW9yIENvdW5jaWwFAjQ4ZxAFN05hdGlvbmFsIFN0dWRlbnQgTG9hbnMgU2VydmljZSBDZW50cmU6IE9uLUxpbmUgU2VydmljZXMFAjQ5ZxAFE05lZ29UZWNoIFdlYiBTeXN0ZW0FAjUwZxAFLk9jY3VwYXRpb25hbCBIZWFsdGggYW5kIFNhZmV0eSBUcmlidW5hbCBDYW5hZGEFAjUxZxAFLk9mZmljZSBvZiBMaXRlcmFjeSBhbmQgRXNzZW50aWFsIFNraWxscyAoT0xFUykFAjUyZxAFMU9uLUxpbmUgTGFib3VyIFN0YW5kYXJkcyBDYWxjdWxhdGlvbiBUb29sIChPTFNDVCkFAjUzZxAFLFBhcnRuZXIgQXBwbGljYXRpb25zIE1lc3NhZ2luZyBTeXN0ZW0gKFBBTVMpBQMxMDVnEAUjUGVyc29uYWwgQWNjZXNzIENvZGUgUmVxdWVzdCAoUEFDUikFAjU0ZxAFFVBvbGljeSBIb3Jpem9uIENhbmFkYQUCNTVnEAUaUHJvYWN0aXZlIERpc2Nsb3N1cmVzIEVTREMFAjU2ZxAFJFByb2FjdGl2ZSBEaXNjbG9zdXJlcyBTZXJ2aWNlIENhbmFkYQUCNTdnEAUyUHVibGljYXRpb25zIE1hbmFnZW1lbnQgYW5kIFBsYW5uaW5nIFN5c3RlbSAoUE1QUykFAjU4ZxAFKVJlY29yZCBvZiBFbXBsb3ltZW50IG9uIHRoZSBXZWIgKFJPRSBXZWIpBQI1OWcQBTZSZWdpc3RyYXRpb24gYW5kIEF1dGhlbnRpY2F0aW9uIFNlY3VyZSBDaGFubmVsIChSQVNDTCkFAjYwZxAFNVNlcnZpY2UgUmVxdWVzdCBNYW5hZ2VtZW50IEluZm9ybWF0aW9uIFN5c3RlbSAoU1JNSVMpBQMxMDZnEAU1U29jaWFsIEluc3VyYW5jZSBSZWdpc3RlciBXZWIgKFNJUldlYikgLSBSYXBpZCBBY2Nlc3MFAzEwN2cQBTNTdGF0ZW1lbnQgb2YgQ29udHJpYnV0aW9ucyBWaWV3IChTT0NPbmxpbmUgb3IgU09DVikFAjYxZxAFQlN1cnBsdXMgRmVkZXJhbCBSZWFsIFByb3BlcnR5IGZvciBIb21lbGVzc25lc3MgSW5pdGlhdGl2ZSAoU0ZSUEhJKQUCNjJnEAU3VGFyZ2V0aW5nLCBSZWZlcnJhbCBhbmQgRmVlZGJhY2sgKFRSRikg4oCTIFByZXNlbnRhdGlvbgUDMTA4ZxAFJFRheCBJbmZvcm1hdGlvbiBTbGlwcyBvbi1saW5lIChUSVNPKQUCNjNnEAUuVGVtcG9yYXJ5IEZvcmVpZ24gV29ya2VyIFdlYiBTZXJ2aWNlIChURlcgV2ViKQUCNjRnEAU0VGVtcG9yYXJ5IEZvcmVpZ24gV29ya2VycyBPbmxpbmUgRnJhdWQgUmVwb3J0aW5nIEFwcAUCNjVnEAURVGhlbWVzIC0gQmVuZWZpdHMFAjY2ZxAFDVRoZW1lcyAtIEpvYnMFAjY3ZxAFK1ZpZXcgYW5kIFVwZGF0ZSBQZXJzb25hbCBJbmZvcm1hdGlvbiAoVlVQSSkFAjY4ZxAFIVZpZXcgTXkgQXBwbGljYXRpb24gU3RhdHVzIChWTUFTKQUCNjlnEAVuV29ya3BsYWNlIEVxdWl0eSAtIEluZGl2aWR1YWwgRW1wbG95ZXIgRGF0YSAoaW5jbHVkaW5nIFdvcmtwbGFjZSBFcXVpdHkgSW5mb3JtYXRpb24gTWFuYWdlbWVudCBTeXN0ZW0gKFdFSU1TKSkFAjcwZxAFDFlvdXRoIENhbmFkYQUCNzFnZGRk0yH4aFe10F4zyqZR5ztApebmxBQJnVtpJyAZo0xUxa0="/>
+					</div>
+
+
+					<div class="form-group">
+						<label for="MainContent_Asset" id="MainContent_AssetLabel">Asset *</label>
+						<select name="ctl00$MainContent$Asset" id="MainContent_Asset"
+							class="form-control" required="required">
+							<option value="">Select</option>
+							<option value="1">Aboriginal Skills and Employment Training Strategy
+								(ASETS)</option>
+							<option value="2">Aboriginal Skills and Employment Training Strategy
+								(ASETS) (SECURE)</option>
+							<option value="3">AppliWeb - Application for Employment Benefits Online</option>
+							<option value="4">Benefits Finder</option>
+							<option value="5">Canada Apprentice Loan Service Centre</option>
+							<option value="94">Canada Education Savings Grants System (CESG)</option>
+							<option value="6">Canada News Centre</option>
+							<option value="95">Canada Student Loans System (CSLS)</option>
+							<option value="7">Canada Volunteer Award (CVA) (formely Prime
+								Minister&#39;s Volunteer Awards (PMVA))</option>
+							<option value="8">Canada.ca</option>
+							<option value="9">Canadian Occupational Health &amp; Safety -
+								Musculoskeletal Injury E-Tool for Assessment</option>
+							<option value="10">Canadian Occupational Projection System (COPS)</option>
+							<option value="11">Canadian Retirement Income Calculator (CRIC)</option>
+							<option value="12">CanLearn Pro</option>
+							<option value="13">CanLearn Tools</option>
+							<option value="97">Common System for Grants and Contributions (CSGC)
+								Presentation</option>
+							<option value="98">Common System for Grants and Contributions (CSGC)
+								Reports</option>
+							<option value="14">Consulting with Canadians</option>
+							<option value="96">CPP/OAS Mail Fulfillment System</option>
+							<option value="15">Data Gateway</option>
+							<option value="99">Data Gateway Administration Web Site - Presentation</option>
+							<option value="100">Data Gateway Receiver Secured - Presentation</option>
+							<option value="16">Database on Minimum Wages</option>
+							<option value="17">Early Childhood Development (ECD) - Early Learning and
+								Child Care (ELCC)</option>
+							<option value="18">Ellis Chart</option>
+							<option value="19">Employment and Social Development Canada (ESDC)</option>
+							<option value="20">Employment Insurance Benefits Information System (EI
+								BIS)</option>
+							<option value="101">Employment Insurance Mail Fulfillment System</option>
+							<option value="21">Federal Activities and Expenditures for Young Children
+								Database (FAEYC)</option>
+							<option value="22">Find a Service Canada Office</option>
+							<option value="23">Grants and Contributions Online Services (GCOS)</option>
+							<option value="102">Group Information Session Planner (GISP) Oracle Forms
+								– Reports</option>
+							<option value="24">Homelessness Electronic Reporting and Information
+								Network (HERIN)</option>
+							<option value="25">Index of Jurisprudence</option>
+							<option value="26">Information on EI Economic Regions</option>
+							<option value="103">Insurance Processing Office Centre Quality Monitoring
+								System (IPOCQMS)</option>
+							<option value="27">Interactive Fact Finding Services (IFFS)</option>
+							<option value="28">Internet Client Access Management System (iCAMS)</option>
+							<option value="29">Internet Reporting Service (IRS) (Interdec)</option>
+							<option value="30">Interprovincial Standards Red Seal Program</option>
+							<option value="31">Job Bank – Training and Careers</option>
+							<option value="32">Job Bank 2.0 - Employers</option>
+							<option value="33">Job Bank 2.0 - Internal</option>
+							<option value="34">Job Bank 2.0 - Search</option>
+							<option value="35">Job Bank 2.0 - Seekers (Job Match)</option>
+							<option value="36">Job Bank for Job Seekers (JBFS) 1.0</option>
+							<option value="37">Jurisprudence Library</option>
+							<option value="38">Labour</option>
+							<option value="39">Labour Electronic Access Form (LEAF)</option>
+							<option value="40">Master Certification List (MCL)</option>
+							<option value="41">MSCA e-questionnaire</option>
+							<option value="42">My EI Information Online (MEIIO)</option>
+							<option value="43">My Service Canada Account (MSCA)</option>
+							<option value="44">My Service Canada Business Account (MSCBA)</option>
+							<option value="45">National Child Benefit (NCB)</option>
+							<option value="104">National Integrity Investigation System (NIIS)
+								Presentation</option>
+							<option value="46">National Occupational Classification Code (NOC)
+								(including Career Handbook)</option>
+							<option value="47">National Occupational Classification Modernization
+								Collaborative Workspace (NOCM WS)</option>
+							<option value="48">National Senior Council</option>
+							<option value="49">National Student Loans Service Centre: On-Line
+								Services</option>
+							<option value="50">NegoTech Web System</option>
+							<option value="51">Occupational Health and Safety Tribunal Canada</option>
+							<option value="52">Office of Literacy and Essential Skills (OLES)</option>
+							<option value="53">On-Line Labour Standards Calculation Tool (OLSCT)</option>
+							<option value="105">Partner Applications Messaging System (PAMS)</option>
+							<option value="54">Personal Access Code Request (PACR)</option>
+							<option value="55">Policy Horizon Canada</option>
+							<option value="56">Proactive Disclosures ESDC</option>
+							<option value="57">Proactive Disclosures Service Canada</option>
+							<option value="58">Publications Management and Planning System (PMPS)</option>
+							<option value="59">Record of Employment on the Web (ROE Web)</option>
+							<option value="60">Registration and Authentication Secure Channel (RASCL)</option>
+							<option value="106">Service Request Management Information System (SRMIS)</option>
+							<option value="107">Social Insurance Register Web (SIRWeb) - Rapid Access</option>
+							<option value="61">Statement of Contributions View (SOCOnline or SOCV)</option>
+							<option value="62">Surplus Federal Real Property for Homelessness
+								Initiative (SFRPHI)</option>
+							<option value="108">Targeting, Referral and Feedback (TRF) – Presentation</option>
+							<option value="63">Tax Information Slips on-line (TISO)</option>
+							<option value="64">Temporary Foreign Worker Web Service (TFW Web)</option>
+							<option value="65">Temporary Foreign Workers Online Fraud Reporting App</option>
+							<option value="66">Themes - Benefits</option>
+							<option value="67">Themes - Jobs</option>
+							<option value="68">View and Update Personal Information (VUPI)</option>
+							<option value="69">View My Application Status (VMAS)</option>
+							<option value="70">Workplace Equity - Individual Employer Data (including
+								Workplace Equity Information Management System (WEIMS))</option>
+							<option value="71">Youth Canada</option>
+
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_RequestForChangeNumber"
+							id="MainContent_RequestForChangeNumberLabel">RFC Number</label>
+						<input name="ctl00$MainContent$RequestForChangeNumber" type="text"
+							id="MainContent_RequestForChangeNumber" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_SoftwareRequestUnitNumber"
+							id="MainContent_SoftwareRequestUnitNumberLabel">SRU Number</label>
+						<input name="ctl00$MainContent$SoftwareRequestUnitNumber" type="text"
+							id="MainContent_SoftwareRequestUnitNumber" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_VersionNumber"
+							id="MainContent_VersionNumberLabel">Version Number</label>
+						<input name="ctl00$MainContent$VersionNumber" type="text"
+							id="MainContent_VersionNumber" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_TargetQualityAssuranceDate"
+							id="MainContent_TargetQualityAssuranceDateLabel">TQAD (YYYY/MM/DD)</label>
+						<input name="ctl00$MainContent$TargetQualityAssuranceDate" type="date"
+							id="MainContent_TargetQualityAssuranceDate" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_TargetDistributionDate"
+							id="MainContent_TargetDistributionDateLabel">TDD (YYYY/MM/DD)</label>
+						<input name="ctl00$MainContent$TargetDistributionDate" type="date"
+							id="MainContent_TargetDistributionDate" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_TargetProductionAvailabilityDate"
+							id="MainContent_TargetProductionAvailabilityDateLabel">TPAD (YYYY/MM/DD)</label>
+						<input name="ctl00$MainContent$TargetProductionAvailabilityDate"
+							type="date" id="MainContent_TargetProductionAvailabilityDate"
+							class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_RequestedDate"
+							id="MainContent_RequestedDateLabel">Requested Date (YYYY/MM/DD)</label>
+						<input name="ctl00$MainContent$RequestedDate" type="date"
+							id="MainContent_RequestedDate" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_CompletedDate"
+							id="MainContent_CompletedDateLabel">Completed Date (YYYY/MM/DD)</label>
+						<input name="ctl00$MainContent$CompletedDate" type="date"
+							id="MainContent_CompletedDate" class="form-control" />
+					</div>
+
+					<div class="form-group">
+						<label for="MainContent_NumberOfPages"
+							id="MainContent_NumberOfPagesLabel">Number of Pages</label>
+						<input name="ctl00$MainContent$NumberOfPages" type="number"
+							id="MainContent_NumberOfPages" class="form-control" />
+					</div>
+
+					<input type="submit" name="ctl00$MainContent$Submit" value="Submit"
+						id="MainContent_Submit" class="btn btn-default" />
+
+					<div class="aspNetHidden">
+
+						<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR"
+							value="EAA4F383" />
+						<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+							value="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"
+							/>
+					</div></form>
+			</div>
+
+
+			<!-- end main content -->
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<div class="row pagedetails">
+					<div class="col-sm-5 col-xs-12 datemod">
+						<dl id="wb-dtmd">
+							<dt>Date modified:&#32;</dt>
+							<dd><time property="dateModified">2016-05-04</time></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- Write closure template -->
+			<script type="text/javascript">
+                var defPreFooter = document.getElementById("def-preFooter");
+                defPreFooter.outerHTML = wet.builder.preFooter({"cdnEnv":"esdcprod","showPostContent":true,"showFeedback":true,"showShare":true});
+            </script>
+		</main>
+		<div id="def-footer">
+			<!-- Write closure fall-back static file -->
+			<footer role="contentinfo" id="wb-info">
+				<!-- If you want to use the global navigation 
+			<nav role="navigation" class="container wb-navcurr">
+				<h2 class="wb-inv">About government</h2>
+				<ul class="list-unstyled colcount-sm-2 colcount-md-4">
+					<li><a href="https://intranet.canada.ca/psc-fsc/index-eng.asp">News</a></li>
+					<li><a href="https://intranet.canada.ca/hr-rh/index-eng.asp">Human resources</a></li>
+					<li><a href="https://intranet.canada.ca/cdl-dca/index-eng.asp">Career development and learning</a></li>
+					<li><a href="https://intranet.canada.ca/wg-tg/index-eng.asp">Services and tools</a></li>
+				</ul>
+			</nav>
+			-->
+				<nav role="navigation" class="container wb-navcurr">
+					<h2 class="wb-inv">About this site</h2>
+					<ul class="list-unstyled colcount-sm-2 colcount-md-4">
+						<!-- Add your customized links to populate the footer -->
+						<li><a href="#">Link 1</a></li>
+					</ul>
+				</nav>
+				<div class="brand">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-8">
+								<a href="https://www.canada.ca/en.html"><object type="image/svg+xml"
+										tabindex="-1"
+										data='https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/sig-blk-en.svg'></object><span
+										class="wb-inv">Government of Canada</span></a>
+							</div>
+							<div class="col-xs-6 visible-sm visible-xs tofpg">
+								<a href="#wb-cont">Top of Page<span class="glyphicon
+										glyphicon-chevron-up"></span></a>
+							</div>
+							<div class="col-xs-6 col-md-4 text-right">
+								<object type="image/svg+xml" tabindex="-1" role="img"
+									data='https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_31/assets/wmms-blk.svg'
+									aria-label="Symbol of the Government of Canada"></object>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+            var defFooter = document.getElementById("def-footer");
+            defFooter.outerHTML = wet.builder.appFooter({"cdnEnv":"esdcprod","showFeatures":true,"subTheme":"esdc"});
+        </script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+                document.write(wet.builder.refFooter({"cdnEnv":"esdcprod","exitScript":false,"displayModal":false}));
+            </script>
+		<!-- Visual Studio Browser Link -->
+		<script type="application/json" id="__browserLink_initializationData">
+			{"appName":"Firefox","requestId":"0a9765b0783e4a12be4cb8cc2ce8202a"}
+		</script>
+		<script type="text/javascript"
+			src="http://localhost:2095/245f794e64c94dc2908d5b398ffa6287/browserLink"
+			async="async"></script>
+		<!-- End Browser Link -->
+
+	</body>
+</html>
